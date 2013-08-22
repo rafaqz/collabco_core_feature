@@ -363,26 +363,6 @@ function collabco_permissions_feature_user_default_permissions() {
     'module' => 'register_preapproved',
   );
 
-  // Exported permission: administer profile types.
-  $permissions['administer profile types'] = array(
-    'name' => 'administer profile types',
-    'roles' => array(
-      'Admin' => 'Admin',
-      'Super Admin' => 'Super Admin',
-    ),
-    'module' => 'profile2',
-  );
-
-  // Exported permission: administer profiles.
-  $permissions['administer profiles'] = array(
-    'name' => 'administer profiles',
-    'roles' => array(
-      'Admin' => 'Admin',
-      'Super Admin' => 'Super Admin',
-    ),
-    'module' => 'profile2',
-  );
-
   // Exported permission: administer realname.
   $permissions['administer realname'] = array(
     'name' => 'administer realname',
@@ -548,37 +528,6 @@ function collabco_permissions_feature_user_default_permissions() {
     'module' => 'node',
   );
 
-  // Exported permission: create conversation content.
-  $permissions['create conversation content'] = array(
-    'name' => 'create conversation content',
-    'roles' => array(
-      'Admin' => 'Admin',
-      'authenticated user' => 'authenticated user',
-    ),
-    'module' => 'node',
-  );
-
-  // Exported permission: create event content.
-  $permissions['create event content'] = array(
-    'name' => 'create event content',
-    'roles' => array(
-      'Admin' => 'Admin',
-      'Community Moderator' => 'Community Moderator',
-      'Content Manager' => 'Content Manager',
-    ),
-    'module' => 'node',
-  );
-
-  // Exported permission: create group content.
-  $permissions['create group content'] = array(
-    'name' => 'create group content',
-    'roles' => array(
-      'Admin' => 'Admin',
-      'authenticated user' => 'authenticated user',
-    ),
-    'module' => 'node',
-  );
-
   // Exported permission: create messages.
   $permissions['create messages'] = array(
     'name' => 'create messages',
@@ -587,18 +536,6 @@ function collabco_permissions_feature_user_default_permissions() {
       'authenticated user' => 'authenticated user',
     ),
     'module' => 'message',
-  );
-
-  // Exported permission: create organisation content.
-  $permissions['create organisation content'] = array(
-    'name' => 'create organisation content',
-    'roles' => array(
-      'Admin' => 'Admin',
-      'Community Moderator' => 'Community Moderator',
-      'Content Manager' => 'Content Manager',
-      'Super Admin' => 'Super Admin',
-    ),
-    'module' => 'node',
   );
 
   // Exported permission: create url aliases.
@@ -628,94 +565,12 @@ function collabco_permissions_feature_user_default_permissions() {
     'module' => 'node',
   );
 
-  // Exported permission: delete any conversation content.
-  $permissions['delete any conversation content'] = array(
-    'name' => 'delete any conversation content',
-    'roles' => array(
-      'Admin' => 'Admin',
-    ),
-    'module' => 'node',
-  );
-
-  // Exported permission: delete any event content.
-  $permissions['delete any event content'] = array(
-    'name' => 'delete any event content',
-    'roles' => array(
-      'Admin' => 'Admin',
-    ),
-    'module' => 'node',
-  );
-
-  // Exported permission: delete any group content.
-  $permissions['delete any group content'] = array(
-    'name' => 'delete any group content',
-    'roles' => array(
-      'Admin' => 'Admin',
-    ),
-    'module' => 'node',
-  );
-
-  // Exported permission: delete any organisation content.
-  $permissions['delete any organisation content'] = array(
-    'name' => 'delete any organisation content',
-    'roles' => array(
-      'Admin' => 'Admin',
-      'Community Moderator' => 'Community Moderator',
-      'Content Manager' => 'Content Manager',
-      'Super Admin' => 'Super Admin',
-    ),
-    'module' => 'node',
-  );
-
   // Exported permission: delete own basic_page content.
   $permissions['delete own basic_page content'] = array(
     'name' => 'delete own basic_page content',
     'roles' => array(
       'Admin' => 'Admin',
       'authenticated user' => 'authenticated user',
-    ),
-    'module' => 'node',
-  );
-
-  // Exported permission: delete own conversation content.
-  $permissions['delete own conversation content'] = array(
-    'name' => 'delete own conversation content',
-    'roles' => array(
-      'Admin' => 'Admin',
-      'authenticated user' => 'authenticated user',
-    ),
-    'module' => 'node',
-  );
-
-  // Exported permission: delete own event content.
-  $permissions['delete own event content'] = array(
-    'name' => 'delete own event content',
-    'roles' => array(
-      'Admin' => 'Admin',
-      'Community Moderator' => 'Community Moderator',
-      'Content Manager' => 'Content Manager',
-    ),
-    'module' => 'node',
-  );
-
-  // Exported permission: delete own group content.
-  $permissions['delete own group content'] = array(
-    'name' => 'delete own group content',
-    'roles' => array(
-      'Admin' => 'Admin',
-      'authenticated user' => 'authenticated user',
-    ),
-    'module' => 'node',
-  );
-
-  // Exported permission: delete own organisation content.
-  $permissions['delete own organisation content'] = array(
-    'name' => 'delete own organisation content',
-    'roles' => array(
-      'Admin' => 'Admin',
-      'Community Moderator' => 'Community Moderator',
-      'Content Manager' => 'Content Manager',
-      'Super Admin' => 'Super Admin',
     ),
     'module' => 'node',
   );
@@ -749,62 +604,6 @@ function collabco_permissions_feature_user_default_permissions() {
     'module' => 'node',
   );
 
-  // Exported permission: edit any conversation content.
-  $permissions['edit any conversation content'] = array(
-    'name' => 'edit any conversation content',
-    'roles' => array(
-      'Admin' => 'Admin',
-      'Content Manager' => 'Content Manager',
-    ),
-    'module' => 'node',
-  );
-
-  // Exported permission: edit any event content.
-  $permissions['edit any event content'] = array(
-    'name' => 'edit any event content',
-    'roles' => array(
-      'Admin' => 'Admin',
-      'Community Moderator' => 'Community Moderator',
-      'Content Manager' => 'Content Manager',
-    ),
-    'module' => 'node',
-  );
-
-  // Exported permission: edit any group content.
-  $permissions['edit any group content'] = array(
-    'name' => 'edit any group content',
-    'roles' => array(
-      'Admin' => 'Admin',
-      'Community Moderator' => 'Community Moderator',
-      'Content Manager' => 'Content Manager',
-    ),
-    'module' => 'node',
-  );
-
-  // Exported permission: edit any profile profile.
-  $permissions['edit any profile profile'] = array(
-    'name' => 'edit any profile profile',
-    'roles' => array(
-      'Admin' => 'Admin',
-      'Community Moderator' => 'Community Moderator',
-      'Content Manager' => 'Content Manager',
-      'Super Admin' => 'Super Admin',
-    ),
-    'module' => 'profile2',
-  );
-
-  // Exported permission: edit any organisation content.
-  $permissions['edit any organisation content'] = array(
-    'name' => 'edit any organisation content',
-    'roles' => array(
-      'Admin' => 'Admin',
-      'Community Moderator' => 'Community Moderator',
-      'Content Manager' => 'Content Manager',
-      'Super Admin' => 'Super Admin',
-    ),
-    'module' => 'node',
-  );
-
   // Exported permission: edit own basic_page content.
   $permissions['edit own basic_page content'] = array(
     'name' => 'edit own basic_page content',
@@ -823,58 +622,6 @@ function collabco_permissions_feature_user_default_permissions() {
       'authenticated user' => 'authenticated user',
     ),
     'module' => 'comment',
-  );
-
-  // Exported permission: edit own conversation content.
-  $permissions['edit own conversation content'] = array(
-    'name' => 'edit own conversation content',
-    'roles' => array(
-      'Admin' => 'Admin',
-      'authenticated user' => 'authenticated user',
-    ),
-    'module' => 'node',
-  );
-
-  // Exported permission: edit own event content.
-  $permissions['edit own event content'] = array(
-    'name' => 'edit own event content',
-    'roles' => array(
-      'Admin' => 'Admin',
-      'Community Moderator' => 'Community Moderator',
-      'Content Manager' => 'Content Manager',
-    ),
-    'module' => 'node',
-  );
-
-  // Exported permission: edit own group content.
-  $permissions['edit own group content'] = array(
-    'name' => 'edit own group content',
-    'roles' => array(
-      'Admin' => 'Admin',
-      'authenticated user' => 'authenticated user',
-    ),
-    'module' => 'node',
-  );
-
-  // Exported permission: edit own profile profile.
-  $permissions['edit own profile profile'] = array(
-    'name' => 'edit own profile profile',
-    'roles' => array(
-      'authenticated user' => 'authenticated user',
-    ),
-    'module' => 'profile2',
-  );
-
-  // Exported permission: edit own organisation content.
-  $permissions['edit own organisation content'] = array(
-    'name' => 'edit own organisation content',
-    'roles' => array(
-      'Admin' => 'Admin',
-      'Community Moderator' => 'Community Moderator',
-      'Content Manager' => 'Content Manager',
-      'Super Admin' => 'Super Admin',
-    ),
-    'module' => 'node',
   );
 
   // Exported permission: execute php code.
@@ -1224,29 +971,11 @@ function collabco_permissions_feature_user_default_permissions() {
     'module' => 'legal',
   );
 
-  // Exported permission: view any profile profile.
-  $permissions['view any profile profile'] = array(
-    'name' => 'view any profile profile',
-    'roles' => array(
-      'authenticated user' => 'authenticated user',
-    ),
-    'module' => 'profile2',
-  );
-
   // Exported permission: view date repeats.
   $permissions['view date repeats'] = array(
     'name' => 'view date repeats',
     'roles' => array(),
     'module' => 'date_repeat_field',
-  );
-
-  // Exported permission: view own profile profile.
-  $permissions['view own profile profile'] = array(
-    'name' => 'view own profile profile',
-    'roles' => array(
-      'authenticated user' => 'authenticated user',
-    ),
-    'module' => 'profile2',
   );
 
   // Exported permission: view own unpublished content.

@@ -28,24 +28,6 @@ function collabco_permissions_feature_user_default_roles() {
     'weight' => 4,
   );
 
-  // Exported role: Individual User.
-  $roles['Individual User'] = array(
-    'name' => 'Individual User',
-    'weight' => 6,
-  );
-
-  // Exported role: Kickstarters.
-  $roles['Kickstarters'] = array(
-    'name' => 'Kickstarters',
-    'weight' => 8,
-  );
-
-  // Exported role: Organizational User.
-  $roles['Organizational User'] = array(
-    'name' => 'Organizational User',
-    'weight' => 3,
-  );
-
   // Exported role: Super Admin.
   $roles['Super Admin'] = array(
     'name' => 'Super Admin',
