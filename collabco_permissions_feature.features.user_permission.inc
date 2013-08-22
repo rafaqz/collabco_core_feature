@@ -579,16 +579,6 @@ function collabco_permissions_feature_user_default_permissions() {
     'module' => 'node',
   );
 
-  // Exported permission: create knowledge_object content.
-  $permissions['create knowledge_object content'] = array(
-    'name' => 'create knowledge_object content',
-    'roles' => array(
-      'Admin' => 'Admin',
-      'authenticated user' => 'authenticated user',
-    ),
-    'module' => 'node',
-  );
-
   // Exported permission: create messages.
   $permissions['create messages'] = array(
     'name' => 'create messages',
@@ -665,17 +655,6 @@ function collabco_permissions_feature_user_default_permissions() {
     'module' => 'node',
   );
 
-  // Exported permission: delete any knowledge_object content.
-  $permissions['delete any knowledge_object content'] = array(
-    'name' => 'delete any knowledge_object content',
-    'roles' => array(
-      'Admin' => 'Admin',
-      'Community Moderator' => 'Community Moderator',
-      'Content Manager' => 'Content Manager',
-    ),
-    'module' => 'node',
-  );
-
   // Exported permission: delete any organisation content.
   $permissions['delete any organisation content'] = array(
     'name' => 'delete any organisation content',
@@ -722,16 +701,6 @@ function collabco_permissions_feature_user_default_permissions() {
   // Exported permission: delete own group content.
   $permissions['delete own group content'] = array(
     'name' => 'delete own group content',
-    'roles' => array(
-      'Admin' => 'Admin',
-      'authenticated user' => 'authenticated user',
-    ),
-    'module' => 'node',
-  );
-
-  // Exported permission: delete own knowledge_object content.
-  $permissions['delete own knowledge_object content'] = array(
-    'name' => 'delete own knowledge_object content',
     'roles' => array(
       'Admin' => 'Admin',
       'authenticated user' => 'authenticated user',
@@ -860,17 +829,6 @@ function collabco_permissions_feature_user_default_permissions() {
     'module' => 'profile2',
   );
 
-  // Exported permission: edit any knowledge_object content.
-  $permissions['edit any knowledge_object content'] = array(
-    'name' => 'edit any knowledge_object content',
-    'roles' => array(
-      'Admin' => 'Admin',
-      'Community Moderator' => 'Community Moderator',
-      'Content Manager' => 'Content Manager',
-    ),
-    'module' => 'node',
-  );
-
   // Exported permission: edit any organisation content.
   $permissions['edit any organisation content'] = array(
     'name' => 'edit any organisation content',
@@ -941,16 +899,6 @@ function collabco_permissions_feature_user_default_permissions() {
       'authenticated user' => 'authenticated user',
     ),
     'module' => 'profile2',
-  );
-
-  // Exported permission: edit own knowledge_object content.
-  $permissions['edit own knowledge_object content'] = array(
-    'name' => 'edit own knowledge_object content',
-    'roles' => array(
-      'Admin' => 'Admin',
-      'authenticated user' => 'authenticated user',
-    ),
-    'module' => 'node',
   );
 
   // Exported permission: edit own organisation content.
