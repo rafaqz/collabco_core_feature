@@ -492,16 +492,6 @@ function collabco_permissions_feature_user_default_permissions() {
     'module' => 'views',
   );
 
-  // Exported permission: administer voting api.
-  $permissions['administer voting api'] = array(
-    'name' => 'administer voting api',
-    'roles' => array(
-      'Admin' => 'Admin',
-      'Super Admin' => 'Super Admin',
-    ),
-    'module' => 'votingapi',
-  );
-
   // Exported permission: block IP addresses.
   $permissions['block IP addresses'] = array(
     'name' => 'block IP addresses',
@@ -621,28 +611,6 @@ function collabco_permissions_feature_user_default_permissions() {
     'module' => 'node',
   );
 
-  // Exported permission: create service content.
-  $permissions['create service content'] = array(
-    'name' => 'create service content',
-    'roles' => array(
-      'Admin' => 'Admin',
-      'Community Moderator' => 'Community Moderator',
-      'Content Manager' => 'Content Manager',
-    ),
-    'module' => 'node',
-  );
-
-  // Exported permission: create slide content.
-  $permissions['create slide content'] = array(
-    'name' => 'create slide content',
-    'roles' => array(
-      'Admin' => 'Admin',
-      'Community Moderator' => 'Community Moderator',
-      'Content Manager' => 'Content Manager',
-    ),
-    'module' => 'node',
-  );
-
   // Exported permission: create url aliases.
   $permissions['create url aliases'] = array(
     'name' => 'create url aliases',
@@ -720,26 +688,6 @@ function collabco_permissions_feature_user_default_permissions() {
     'module' => 'node',
   );
 
-  // Exported permission: delete any service content.
-  $permissions['delete any service content'] = array(
-    'name' => 'delete any service content',
-    'roles' => array(
-      'Admin' => 'Admin',
-      'Community Moderator' => 'Community Moderator',
-      'Content Manager' => 'Content Manager',
-    ),
-    'module' => 'node',
-  );
-
-  // Exported permission: delete any slide content.
-  $permissions['delete any slide content'] = array(
-    'name' => 'delete any slide content',
-    'roles' => array(
-      'Admin' => 'Admin',
-    ),
-    'module' => 'node',
-  );
-
   // Exported permission: delete own basic_page content.
   $permissions['delete own basic_page content'] = array(
     'name' => 'delete own basic_page content',
@@ -803,28 +751,6 @@ function collabco_permissions_feature_user_default_permissions() {
     'module' => 'node',
   );
 
-  // Exported permission: delete own service content.
-  $permissions['delete own service content'] = array(
-    'name' => 'delete own service content',
-    'roles' => array(
-      'Admin' => 'Admin',
-      'Community Moderator' => 'Community Moderator',
-      'Content Manager' => 'Content Manager',
-    ),
-    'module' => 'node',
-  );
-
-  // Exported permission: delete own slide content.
-  $permissions['delete own slide content'] = array(
-    'name' => 'delete own slide content',
-    'roles' => array(
-      'Admin' => 'Admin',
-      'Community Moderator' => 'Community Moderator',
-      'Content Manager' => 'Content Manager',
-    ),
-    'module' => 'node',
-  );
-
   // Exported permission: delete revisions.
   $permissions['delete revisions'] = array(
     'name' => 'delete revisions',
@@ -864,15 +790,6 @@ function collabco_permissions_feature_user_default_permissions() {
   // Exported permission: delete terms in 5.
   $permissions['delete terms in 5'] = array(
     'name' => 'delete terms in 5',
-    'roles' => array(
-      'Admin' => 'Admin',
-    ),
-    'module' => 'taxonomy',
-  );
-
-  // Exported permission: delete terms in 6.
-  $permissions['delete terms in 6'] = array(
-    'name' => 'delete terms in 6',
     'roles' => array(
       'Admin' => 'Admin',
     ),
@@ -966,28 +883,6 @@ function collabco_permissions_feature_user_default_permissions() {
     'module' => 'node',
   );
 
-  // Exported permission: edit any service content.
-  $permissions['edit any service content'] = array(
-    'name' => 'edit any service content',
-    'roles' => array(
-      'Admin' => 'Admin',
-      'Community Moderator' => 'Community Moderator',
-      'Content Manager' => 'Content Manager',
-    ),
-    'module' => 'node',
-  );
-
-  // Exported permission: edit any slide content.
-  $permissions['edit any slide content'] = array(
-    'name' => 'edit any slide content',
-    'roles' => array(
-      'Admin' => 'Admin',
-      'Community Moderator' => 'Community Moderator',
-      'Content Manager' => 'Content Manager',
-    ),
-    'module' => 'node',
-  );
-
   // Exported permission: edit own basic_page content.
   $permissions['edit own basic_page content'] = array(
     'name' => 'edit own basic_page content',
@@ -1070,28 +965,6 @@ function collabco_permissions_feature_user_default_permissions() {
     'module' => 'node',
   );
 
-  // Exported permission: edit own service content.
-  $permissions['edit own service content'] = array(
-    'name' => 'edit own service content',
-    'roles' => array(
-      'Admin' => 'Admin',
-      'Community Moderator' => 'Community Moderator',
-      'Content Manager' => 'Content Manager',
-    ),
-    'module' => 'node',
-  );
-
-  // Exported permission: edit own slide content.
-  $permissions['edit own slide content'] = array(
-    'name' => 'edit own slide content',
-    'roles' => array(
-      'Admin' => 'Admin',
-      'Community Moderator' => 'Community Moderator',
-      'Content Manager' => 'Content Manager',
-    ),
-    'module' => 'node',
-  );
-
   // Exported permission: edit terms in 2.
   $permissions['edit terms in 2'] = array(
     'name' => 'edit terms in 2',
@@ -1125,16 +998,6 @@ function collabco_permissions_feature_user_default_permissions() {
   // Exported permission: edit terms in 5.
   $permissions['edit terms in 5'] = array(
     'name' => 'edit terms in 5',
-    'roles' => array(
-      'Admin' => 'Admin',
-      'Content Manager' => 'Content Manager',
-    ),
-    'module' => 'taxonomy',
-  );
-
-  // Exported permission: edit terms in 6.
-  $permissions['edit terms in 6'] = array(
-    'name' => 'edit terms in 6',
     'roles' => array(
       'Admin' => 'Admin',
       'Content Manager' => 'Content Manager',
@@ -1229,18 +1092,6 @@ function collabco_permissions_feature_user_default_permissions() {
       'authenticated user' => 'authenticated user',
     ),
     'module' => 'comment',
-  );
-
-  // Exported permission: rate content.
-  $permissions['rate content'] = array(
-    'name' => 'rate content',
-    'roles' => array(
-      'Admin' => 'Admin',
-      'Community Moderator' => 'Community Moderator',
-      'Content Manager' => 'Content Manager',
-      'Super Admin' => 'Super Admin',
-    ),
-    'module' => 'fivestar',
   );
 
   // Exported permission: revert revisions.
@@ -1515,15 +1366,6 @@ function collabco_permissions_feature_user_default_permissions() {
     'name' => 'view date repeats',
     'roles' => array(),
     'module' => 'date_repeat_field',
-  );
-
-  // Exported permission: view devel_node_access information.
-  $permissions['view devel_node_access information'] = array(
-    'name' => 'view devel_node_access information',
-    'roles' => array(
-      'Admin' => 'Admin',
-    ),
-    'module' => 'devel_node_access',
   );
 
   // Exported permission: view own profile profile.
