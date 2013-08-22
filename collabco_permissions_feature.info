@@ -120,10 +120,6 @@ features[user_permission][] = delete own event content
 features[user_permission][] = delete own group content
 features[user_permission][] = delete own organisation content
 features[user_permission][] = delete revisions
-features[user_permission][] = delete terms in 2
-features[user_permission][] = delete terms in 3
-features[user_permission][] = delete terms in 4
-features[user_permission][] = delete terms in 5
 features[user_permission][] = display drupal links
 features[user_permission][] = edit any basic_page content
 features[user_permission][] = edit any conversation content
@@ -138,10 +134,6 @@ features[user_permission][] = edit own event content
 features[user_permission][] = edit own group content
 features[user_permission][] = edit own profile profile
 features[user_permission][] = edit own organisation content
-features[user_permission][] = edit terms in 2
-features[user_permission][] = edit terms in 3
-features[user_permission][] = edit terms in 4
-features[user_permission][] = edit terms in 5
 features[user_permission][] = execute php code
 features[user_permission][] = flush caches
 features[user_permission][] = manage features
@@ -195,4 +187,12 @@ version = "7.x-1.0-alpha1"
 core = "7.x"
 project = "collabco_permissions_feature"
 datestamp = "1377136486"
+
+
+
+; Information added by drush on 2013-08-21
+version = "7.x-1.0-alpha1"
+core = "7.x"
+project = "collabco_permissions_feature"
+datestamp = "1377137724"
 

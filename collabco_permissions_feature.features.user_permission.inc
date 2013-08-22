@@ -729,42 +729,6 @@ function collabco_permissions_feature_user_default_permissions() {
     'module' => 'node',
   );
 
-  // Exported permission: delete terms in 2.
-  $permissions['delete terms in 2'] = array(
-    'name' => 'delete terms in 2',
-    'roles' => array(
-      'Admin' => 'Admin',
-    ),
-    'module' => 'taxonomy',
-  );
-
-  // Exported permission: delete terms in 3.
-  $permissions['delete terms in 3'] = array(
-    'name' => 'delete terms in 3',
-    'roles' => array(
-      'Admin' => 'Admin',
-    ),
-    'module' => 'taxonomy',
-  );
-
-  // Exported permission: delete terms in 4.
-  $permissions['delete terms in 4'] = array(
-    'name' => 'delete terms in 4',
-    'roles' => array(
-      'Admin' => 'Admin',
-    ),
-    'module' => 'taxonomy',
-  );
-
-  // Exported permission: delete terms in 5.
-  $permissions['delete terms in 5'] = array(
-    'name' => 'delete terms in 5',
-    'roles' => array(
-      'Admin' => 'Admin',
-    ),
-    'module' => 'taxonomy',
-  );
-
   // Exported permission: display drupal links.
   $permissions['display drupal links'] = array(
     'name' => 'display drupal links',
@@ -911,46 +875,6 @@ function collabco_permissions_feature_user_default_permissions() {
       'Super Admin' => 'Super Admin',
     ),
     'module' => 'node',
-  );
-
-  // Exported permission: edit terms in 2.
-  $permissions['edit terms in 2'] = array(
-    'name' => 'edit terms in 2',
-    'roles' => array(
-      'Admin' => 'Admin',
-      'Content Manager' => 'Content Manager',
-    ),
-    'module' => 'taxonomy',
-  );
-
-  // Exported permission: edit terms in 3.
-  $permissions['edit terms in 3'] = array(
-    'name' => 'edit terms in 3',
-    'roles' => array(
-      'Admin' => 'Admin',
-      'Content Manager' => 'Content Manager',
-    ),
-    'module' => 'taxonomy',
-  );
-
-  // Exported permission: edit terms in 4.
-  $permissions['edit terms in 4'] = array(
-    'name' => 'edit terms in 4',
-    'roles' => array(
-      'Admin' => 'Admin',
-      'Content Manager' => 'Content Manager',
-    ),
-    'module' => 'taxonomy',
-  );
-
-  // Exported permission: edit terms in 5.
-  $permissions['edit terms in 5'] = array(
-    'name' => 'edit terms in 5',
-    'roles' => array(
-      'Admin' => 'Admin',
-      'Content Manager' => 'Content Manager',
-    ),
-    'module' => 'taxonomy',
   );
 
   // Exported permission: execute php code.
