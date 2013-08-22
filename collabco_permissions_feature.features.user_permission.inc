@@ -558,9 +558,9 @@ function collabco_permissions_feature_user_default_permissions() {
     'module' => 'node',
   );
 
-  // Exported permission: create discussion content.
-  $permissions['create discussion content'] = array(
-    'name' => 'create discussion content',
+  // Exported permission: create conversation content.
+  $permissions['create conversation content'] = array(
+    'name' => 'create conversation content',
     'roles' => array(
       'Admin' => 'Admin',
       'authenticated user' => 'authenticated user',
@@ -670,9 +670,9 @@ function collabco_permissions_feature_user_default_permissions() {
     'module' => 'node',
   );
 
-  // Exported permission: delete any discussion content.
-  $permissions['delete any discussion content'] = array(
-    'name' => 'delete any discussion content',
+  // Exported permission: delete any conversation content.
+  $permissions['delete any conversation content'] = array(
+    'name' => 'delete any conversation content',
     'roles' => array(
       'Admin' => 'Admin',
     ),
@@ -750,9 +750,9 @@ function collabco_permissions_feature_user_default_permissions() {
     'module' => 'node',
   );
 
-  // Exported permission: delete own discussion content.
-  $permissions['delete own discussion content'] = array(
-    'name' => 'delete own discussion content',
+  // Exported permission: delete own conversation content.
+  $permissions['delete own conversation content'] = array(
+    'name' => 'delete own conversation content',
     'roles' => array(
       'Admin' => 'Admin',
       'authenticated user' => 'authenticated user',
@@ -899,9 +899,9 @@ function collabco_permissions_feature_user_default_permissions() {
     'module' => 'node',
   );
 
-  // Exported permission: edit any discussion content.
-  $permissions['edit any discussion content'] = array(
-    'name' => 'edit any discussion content',
+  // Exported permission: edit any conversation content.
+  $permissions['edit any conversation content'] = array(
+    'name' => 'edit any conversation content',
     'roles' => array(
       'Admin' => 'Admin',
       'Content Manager' => 'Content Manager',
@@ -931,9 +931,9 @@ function collabco_permissions_feature_user_default_permissions() {
     'module' => 'node',
   );
 
-  // Exported permission: edit any iin_kickstarter profile.
-  $permissions['edit any iin_kickstarter profile'] = array(
-    'name' => 'edit any iin_kickstarter profile',
+  // Exported permission: edit any profile profile.
+  $permissions['edit any profile profile'] = array(
+    'name' => 'edit any profile profile',
     'roles' => array(
       'Admin' => 'Admin',
       'Community Moderator' => 'Community Moderator',
@@ -1008,9 +1008,9 @@ function collabco_permissions_feature_user_default_permissions() {
     'module' => 'comment',
   );
 
-  // Exported permission: edit own discussion content.
-  $permissions['edit own discussion content'] = array(
-    'name' => 'edit own discussion content',
+  // Exported permission: edit own conversation content.
+  $permissions['edit own conversation content'] = array(
+    'name' => 'edit own conversation content',
     'roles' => array(
       'Admin' => 'Admin',
       'authenticated user' => 'authenticated user',
@@ -1039,9 +1039,9 @@ function collabco_permissions_feature_user_default_permissions() {
     'module' => 'node',
   );
 
-  // Exported permission: edit own iin_kickstarter profile.
-  $permissions['edit own iin_kickstarter profile'] = array(
-    'name' => 'edit own iin_kickstarter profile',
+  // Exported permission: edit own profile profile.
+  $permissions['edit own profile profile'] = array(
+    'name' => 'edit own profile profile',
     'roles' => array(
       'authenticated user' => 'authenticated user',
     ),
@@ -1501,9 +1501,9 @@ function collabco_permissions_feature_user_default_permissions() {
     'module' => 'legal',
   );
 
-  // Exported permission: view any iin_kickstarter profile.
-  $permissions['view any iin_kickstarter profile'] = array(
-    'name' => 'view any iin_kickstarter profile',
+  // Exported permission: view any profile profile.
+  $permissions['view any profile profile'] = array(
+    'name' => 'view any profile profile',
     'roles' => array(
       'authenticated user' => 'authenticated user',
     ),
@@ -1526,9 +1526,9 @@ function collabco_permissions_feature_user_default_permissions() {
     'module' => 'devel_node_access',
   );
 
-  // Exported permission: view own iin_kickstarter profile.
-  $permissions['view own iin_kickstarter profile'] = array(
-    'name' => 'view own iin_kickstarter profile',
+  // Exported permission: view own profile profile.
+  $permissions['view own profile profile'] = array(
+    'name' => 'view own profile profile',
     'roles' => array(
       'authenticated user' => 'authenticated user',
     ),
