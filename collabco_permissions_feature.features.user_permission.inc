@@ -93,13 +93,6 @@ function collabco_permissions_feature_user_default_permissions() {
     'module' => 'devel',
   );
 
-  // Exported permission: access overlay.
-  $permissions['access overlay'] = array(
-    'name' => 'access overlay',
-    'roles' => array(),
-    'module' => 'overlay',
-  );
-
   // Exported permission: access site in maintenance mode.
   $permissions['access site in maintenance mode'] = array(
     'name' => 'access site in maintenance mode',
