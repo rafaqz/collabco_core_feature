@@ -150,3 +150,10 @@ features[user_role][] = Admin
 features[user_role][] = Community Moderator
 features[user_role][] = Content Manager
 features[user_role][] = Super Admin
+
+
+; Information added by drush on 2013-08-22
+version = "unknown"
+project = "collabco_permissions_feature"
+datestamp = "1377179616"
+
