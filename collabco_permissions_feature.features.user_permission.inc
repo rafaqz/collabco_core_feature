@@ -17,7 +17,6 @@ function collabco_permissions_feature_user_default_permissions() {
       'Admin' => 'Admin',
       'Community Moderator' => 'Community Moderator',
       'Content Manager' => 'Content Manager',
-      'Super Admin' => 'Super Admin',
     ),
     'module' => 'admin_menu',
   );
@@ -29,7 +28,6 @@ function collabco_permissions_feature_user_default_permissions() {
       'Admin' => 'Admin',
       'Community Moderator' => 'Community Moderator',
       'Content Manager' => 'Content Manager',
-      'Super Admin' => 'Super Admin',
       'authenticated user' => 'authenticated user',
     ),
     'module' => 'system',
@@ -182,7 +180,6 @@ function collabco_permissions_feature_user_default_permissions() {
     'roles' => array(
       'Admin' => 'Admin',
       'Community Moderator' => 'Community Moderator',
-      'Super Admin' => 'Super Admin',
     ),
     'module' => 'comment',
   );
@@ -202,7 +199,6 @@ function collabco_permissions_feature_user_default_permissions() {
     'name' => 'administer features',
     'roles' => array(
       'Admin' => 'Admin',
-      'Super Admin' => 'Super Admin',
     ),
     'module' => 'features',
   );
@@ -303,7 +299,6 @@ function collabco_permissions_feature_user_default_permissions() {
     'name' => 'administer nodequeue',
     'roles' => array(
       'Admin' => 'Admin',
-      'Super Admin' => 'Super Admin',
     ),
     'module' => 'nodequeue',
   );
@@ -554,6 +549,8 @@ function collabco_permissions_feature_user_default_permissions() {
     'name' => 'delete any basic_page content',
     'roles' => array(
       'Admin' => 'Admin',
+      'Community Moderator' => 'Community Moderator',
+      'Content Manager' => 'Content Manager',
     ),
     'module' => 'node',
   );
@@ -620,9 +617,7 @@ function collabco_permissions_feature_user_default_permissions() {
   // Exported permission: execute php code.
   $permissions['execute php code'] = array(
     'name' => 'execute php code',
-    'roles' => array(
-      'Admin' => 'Admin',
-    ),
+    'roles' => array(),
     'module' => 'devel',
   );
 
@@ -640,7 +635,6 @@ function collabco_permissions_feature_user_default_permissions() {
     'name' => 'manage features',
     'roles' => array(
       'Admin' => 'Admin',
-      'Super Admin' => 'Super Admin',
     ),
     'module' => 'features',
   );
@@ -652,7 +646,6 @@ function collabco_permissions_feature_user_default_permissions() {
       'Admin' => 'Admin',
       'Community Moderator' => 'Community Moderator',
       'Content Manager' => 'Content Manager',
-      'Super Admin' => 'Super Admin',
     ),
     'module' => 'nodequeue',
   );
@@ -664,7 +657,6 @@ function collabco_permissions_feature_user_default_permissions() {
       'Admin' => 'Admin',
       'Community Moderator' => 'Community Moderator',
       'Content Manager' => 'Content Manager',
-      'Super Admin' => 'Super Admin',
     ),
     'module' => 'nodequeue',
   );
@@ -743,7 +735,6 @@ function collabco_permissions_feature_user_default_permissions() {
       'Admin' => 'Admin',
       'Community Moderator' => 'Community Moderator',
       'Content Manager' => 'Content Manager',
-      'Super Admin' => 'Super Admin',
     ),
     'module' => 'better_formats',
   );
@@ -755,7 +746,6 @@ function collabco_permissions_feature_user_default_permissions() {
       'Admin' => 'Admin',
       'Community Moderator' => 'Community Moderator',
       'Content Manager' => 'Content Manager',
-      'Super Admin' => 'Super Admin',
     ),
     'module' => 'better_formats',
   );
@@ -767,7 +757,6 @@ function collabco_permissions_feature_user_default_permissions() {
       'Admin' => 'Admin',
       'Community Moderator' => 'Community Moderator',
       'Content Manager' => 'Content Manager',
-      'Super Admin' => 'Super Admin',
     ),
     'module' => 'better_formats',
   );
@@ -779,7 +768,6 @@ function collabco_permissions_feature_user_default_permissions() {
       'Admin' => 'Admin',
       'Community Moderator' => 'Community Moderator',
       'Content Manager' => 'Content Manager',
-      'Super Admin' => 'Super Admin',
     ),
     'module' => 'better_formats',
   );
@@ -791,7 +779,6 @@ function collabco_permissions_feature_user_default_permissions() {
       'Admin' => 'Admin',
       'Community Moderator' => 'Community Moderator',
       'Content Manager' => 'Content Manager',
-      'Super Admin' => 'Super Admin',
     ),
     'module' => 'better_formats',
   );
@@ -803,7 +790,6 @@ function collabco_permissions_feature_user_default_permissions() {
       'Admin' => 'Admin',
       'Community Moderator' => 'Community Moderator',
       'Content Manager' => 'Content Manager',
-      'Super Admin' => 'Super Admin',
     ),
     'module' => 'better_formats',
   );
@@ -815,7 +801,6 @@ function collabco_permissions_feature_user_default_permissions() {
       'Admin' => 'Admin',
       'Community Moderator' => 'Community Moderator',
       'Content Manager' => 'Content Manager',
-      'Super Admin' => 'Super Admin',
     ),
     'module' => 'better_formats',
   );
@@ -827,7 +812,6 @@ function collabco_permissions_feature_user_default_permissions() {
       'Admin' => 'Admin',
       'Community Moderator' => 'Community Moderator',
       'Content Manager' => 'Content Manager',
-      'Super Admin' => 'Super Admin',
     ),
     'module' => 'better_formats',
   );
@@ -839,7 +823,6 @@ function collabco_permissions_feature_user_default_permissions() {
       'Admin' => 'Admin',
       'Community Moderator' => 'Community Moderator',
       'Content Manager' => 'Content Manager',
-      'Super Admin' => 'Super Admin',
     ),
     'module' => 'better_formats',
   );
@@ -851,7 +834,6 @@ function collabco_permissions_feature_user_default_permissions() {
       'Admin' => 'Admin',
       'Community Moderator' => 'Community Moderator',
       'Content Manager' => 'Content Manager',
-      'Super Admin' => 'Super Admin',
     ),
     'module' => 'better_formats',
   );
@@ -862,7 +844,6 @@ function collabco_permissions_feature_user_default_permissions() {
     'roles' => array(
       'Admin' => 'Admin',
       'Content Manager' => 'Content Manager',
-      'Super Admin' => 'Super Admin',
     ),
     'module' => 'better_formats',
   );
@@ -874,7 +855,6 @@ function collabco_permissions_feature_user_default_permissions() {
       'Admin' => 'Admin',
       'Community Moderator' => 'Community Moderator',
       'Content Manager' => 'Content Manager',
-      'Super Admin' => 'Super Admin',
     ),
     'module' => 'better_formats',
   );
@@ -924,9 +904,6 @@ function collabco_permissions_feature_user_default_permissions() {
       'Admin' => 'Admin',
       'Community Moderator' => 'Community Moderator',
       'Content Manager' => 'Content Manager',
-      'Individual User' => 'Individual User',
-      'Organizational User' => 'Organizational User',
-      'Super Admin' => 'Super Admin',
       'authenticated user' => 'authenticated user',
     ),
     'module' => 'filter',
@@ -939,7 +916,6 @@ function collabco_permissions_feature_user_default_permissions() {
       'Admin' => 'Admin',
       'Community Moderator' => 'Community Moderator',
       'Content Manager' => 'Content Manager',
-      'Super Admin' => 'Super Admin',
     ),
     'module' => 'filter',
   );
