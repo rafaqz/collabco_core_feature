@@ -230,34 +230,6 @@ function collabco_permissions_feature_user_default_permissions() {
     'module' => 'image',
   );
 
-  // Exported permission: administer mail templates.
-  $permissions['administer mail templates'] = array(
-    'name' => 'administer mail templates',
-    'roles' => array(
-      'Admin' => 'Admin',
-      'Content Manager' => 'Content Manager',
-    ),
-    'module' => 'mail_edit',
-  );
-
-  // Exported permission: administer mailsystem.
-  $permissions['administer mailsystem'] = array(
-    'name' => 'administer mailsystem',
-    'roles' => array(
-      'Admin' => 'Admin',
-    ),
-    'module' => 'mailsystem',
-  );
-
-  // Exported permission: administer mandrill.
-  $permissions['administer mandrill'] = array(
-    'name' => 'administer mandrill',
-    'roles' => array(
-      'Admin' => 'Admin',
-    ),
-    'module' => 'mandrill',
-  );
-
   // Exported permission: administer masquerade.
   $permissions['administer masquerade'] = array(
     'name' => 'administer masquerade',
@@ -438,6 +410,7 @@ function collabco_permissions_feature_user_default_permissions() {
     'name' => 'administer users',
     'roles' => array(
       'Admin' => 'Admin',
+      'Community Moderator' => 'Community Moderator',
     ),
     'module' => 'user',
   );
@@ -495,15 +468,6 @@ function collabco_permissions_feature_user_default_permissions() {
       'authenticated user' => 'authenticated user',
     ),
     'module' => 'user',
-  );
-
-  // Exported permission: configure mandrill templates.
-  $permissions['configure mandrill templates'] = array(
-    'name' => 'configure mandrill templates',
-    'roles' => array(
-      'Admin' => 'Admin',
-    ),
-    'module' => 'mandrill_template',
   );
 
   // Exported permission: create basic_page content.
