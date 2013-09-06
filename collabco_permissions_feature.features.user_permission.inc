@@ -109,6 +109,17 @@ function collabco_permissions_feature_user_default_permissions() {
     'module' => 'system',
   );
 
+  // Exported permission: access statistics.
+  $permissions['access statistics'] = array(
+    'name' => 'access statistics',
+    'roles' => array(
+      'Admin' => 'Admin',
+      'Community Moderator' => 'Community Moderator',
+      'Content Manager' => 'Content Manager',
+    ),
+    'module' => 'statistics',
+  );
+
   // Exported permission: access user profiles.
   $permissions['access user profiles'] = array(
     'name' => 'access user profiles',
@@ -366,6 +377,15 @@ function collabco_permissions_feature_user_default_permissions() {
       'Admin' => 'Admin',
     ),
     'module' => 'system',
+  );
+
+  // Exported permission: administer statistics.
+  $permissions['administer statistics'] = array(
+    'name' => 'administer statistics',
+    'roles' => array(
+      'Admin' => 'Admin',
+    ),
+    'module' => 'statistics',
   );
 
   // Exported permission: administer string overrides.
@@ -919,6 +939,17 @@ function collabco_permissions_feature_user_default_permissions() {
       'authenticated user' => 'authenticated user',
     ),
     'module' => 'node',
+  );
+
+  // Exported permission: view post access counter.
+  $permissions['view post access counter'] = array(
+    'name' => 'view post access counter',
+    'roles' => array(
+      'Admin' => 'Admin',
+      'Community Moderator' => 'Community Moderator',
+      'Content Manager' => 'Content Manager',
+    ),
+    'module' => 'statistics',
   );
 
   // Exported permission: view revisions.
