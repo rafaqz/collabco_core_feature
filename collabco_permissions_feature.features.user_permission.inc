@@ -109,17 +109,6 @@ function collabco_permissions_feature_user_default_permissions() {
     'module' => 'system',
   );
 
-  // Exported permission: access statistics.
-  $permissions['access statistics'] = array(
-    'name' => 'access statistics',
-    'roles' => array(
-      'Admin' => 'Admin',
-      'Community Moderator' => 'Community Moderator',
-      'Content Manager' => 'Content Manager',
-    ),
-    'module' => 'statistics',
-  );
-
   // Exported permission: access user profiles.
   $permissions['access user profiles'] = array(
     'name' => 'access user profiles',
@@ -221,15 +210,6 @@ function collabco_permissions_feature_user_default_permissions() {
       'Admin' => 'Admin',
     ),
     'module' => 'filter',
-  );
-
-  // Exported permission: administer group.
-  $permissions['administer group'] = array(
-    'name' => 'administer group',
-    'roles' => array(
-      'Admin' => 'Admin',
-    ),
-    'module' => 'og',
   );
 
   // Exported permission: administer image styles.
@@ -352,15 +332,6 @@ function collabco_permissions_feature_user_default_permissions() {
     'module' => 'recaptcha',
   );
 
-  // Exported permission: administer search.
-  $permissions['administer search'] = array(
-    'name' => 'administer search',
-    'roles' => array(
-      'Admin' => 'Admin',
-    ),
-    'module' => 'search',
-  );
-
   // Exported permission: administer site configuration.
   $permissions['administer site configuration'] = array(
     'name' => 'administer site configuration',
@@ -377,15 +348,6 @@ function collabco_permissions_feature_user_default_permissions() {
       'Admin' => 'Admin',
     ),
     'module' => 'system',
-  );
-
-  // Exported permission: administer statistics.
-  $permissions['administer statistics'] = array(
-    'name' => 'administer statistics',
-    'roles' => array(
-      'Admin' => 'Admin',
-    ),
-    'module' => 'statistics',
   );
 
   // Exported permission: administer string overrides.
@@ -693,16 +655,6 @@ function collabco_permissions_feature_user_default_permissions() {
     'module' => 'node',
   );
 
-  // Exported permission: search content.
-  $permissions['search content'] = array(
-    'name' => 'search content',
-    'roles' => array(
-      'Admin' => 'Admin',
-      'authenticated user' => 'authenticated user',
-    ),
-    'module' => 'search',
-  );
-
   // Exported permission: select account cancellation method.
   $permissions['select account cancellation method'] = array(
     'name' => 'select account cancellation method',
@@ -871,16 +823,6 @@ function collabco_permissions_feature_user_default_permissions() {
     'module' => 'devel',
   );
 
-  // Exported permission: use advanced search.
-  $permissions['use advanced search'] = array(
-    'name' => 'use advanced search',
-    'roles' => array(
-      'Admin' => 'Admin',
-      'authenticated user' => 'authenticated user',
-    ),
-    'module' => 'search',
-  );
-
   // Exported permission: use text format filtered_html.
   $permissions['use text format filtered_html'] = array(
     'name' => 'use text format filtered_html',
@@ -939,17 +881,6 @@ function collabco_permissions_feature_user_default_permissions() {
       'authenticated user' => 'authenticated user',
     ),
     'module' => 'node',
-  );
-
-  // Exported permission: view post access counter.
-  $permissions['view post access counter'] = array(
-    'name' => 'view post access counter',
-    'roles' => array(
-      'Admin' => 'Admin',
-      'Community Moderator' => 'Community Moderator',
-      'Content Manager' => 'Content Manager',
-    ),
-    'module' => 'statistics',
   );
 
   // Exported permission: view revisions.
