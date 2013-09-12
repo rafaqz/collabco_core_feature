@@ -160,7 +160,6 @@ function collabco_permissions_feature_user_default_permissions() {
     'name' => 'administer blocks',
     'roles' => array(
       'Admin' => 'Admin',
-      'Content Manager' => 'Content Manager',
     ),
     'module' => 'block',
   );
@@ -188,7 +187,6 @@ function collabco_permissions_feature_user_default_permissions() {
     'name' => 'administer content types',
     'roles' => array(
       'Admin' => 'Admin',
-      'Content Manager' => 'Content Manager',
     ),
     'module' => 'node',
   );
@@ -270,8 +268,6 @@ function collabco_permissions_feature_user_default_permissions() {
     'name' => 'administer nodes',
     'roles' => array(
       'Admin' => 'Admin',
-      'Community Moderator' => 'Community Moderator',
-      'Content Manager' => 'Content Manager',
     ),
     'module' => 'node',
   );
@@ -300,6 +296,7 @@ function collabco_permissions_feature_user_default_permissions() {
     'roles' => array(
       'Admin' => 'Admin',
       'Community Moderator' => 'Community Moderator',
+      'Content Manager' => 'Content Manager',
     ),
     'module' => 'register_preapproved',
   );
@@ -390,7 +387,6 @@ function collabco_permissions_feature_user_default_permissions() {
     'name' => 'administer users',
     'roles' => array(
       'Admin' => 'Admin',
-      'Community Moderator' => 'Community Moderator',
     ),
     'module' => 'user',
   );
@@ -815,8 +811,6 @@ function collabco_permissions_feature_user_default_permissions() {
     'name' => 'use text format full_html',
     'roles' => array(
       'Admin' => 'Admin',
-      'Community Moderator' => 'Community Moderator',
-      'Content Manager' => 'Content Manager',
     ),
     'module' => 'filter',
   );
@@ -826,7 +820,6 @@ function collabco_permissions_feature_user_default_permissions() {
     'name' => 'use text format php_code',
     'roles' => array(
       'Admin' => 'Admin',
-      'Content Manager' => 'Content Manager',
     ),
     'module' => 'filter',
   );
