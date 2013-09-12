@@ -387,6 +387,8 @@ function collabco_permissions_feature_user_default_permissions() {
     'name' => 'administer users',
     'roles' => array(
       'Admin' => 'Admin',
+      'Community Moderator' => 'Community Moderator',
+      'Content Manager' => 'Content Manager',
     ),
     'module' => 'user',
   );
