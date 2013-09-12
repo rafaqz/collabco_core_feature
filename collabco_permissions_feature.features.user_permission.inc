@@ -179,7 +179,6 @@ function collabco_permissions_feature_user_default_permissions() {
     'name' => 'administer comments',
     'roles' => array(
       'Admin' => 'Admin',
-      'Community Moderator' => 'Community Moderator',
     ),
     'module' => 'comment',
   );
@@ -364,7 +363,6 @@ function collabco_permissions_feature_user_default_permissions() {
     'name' => 'administer taxonomy',
     'roles' => array(
       'Admin' => 'Admin',
-      'Content Manager' => 'Content Manager',
     ),
     'module' => 'taxonomy',
   );
@@ -669,8 +667,6 @@ function collabco_permissions_feature_user_default_permissions() {
     'name' => 'show format selection for comment',
     'roles' => array(
       'Admin' => 'Admin',
-      'Community Moderator' => 'Community Moderator',
-      'Content Manager' => 'Content Manager',
     ),
     'module' => 'better_formats',
   );
@@ -680,8 +676,6 @@ function collabco_permissions_feature_user_default_permissions() {
     'name' => 'show format selection for message',
     'roles' => array(
       'Admin' => 'Admin',
-      'Community Moderator' => 'Community Moderator',
-      'Content Manager' => 'Content Manager',
     ),
     'module' => 'better_formats',
   );
@@ -691,8 +685,6 @@ function collabco_permissions_feature_user_default_permissions() {
     'name' => 'show format selection for message_type',
     'roles' => array(
       'Admin' => 'Admin',
-      'Community Moderator' => 'Community Moderator',
-      'Content Manager' => 'Content Manager',
     ),
     'module' => 'better_formats',
   );
@@ -702,8 +694,6 @@ function collabco_permissions_feature_user_default_permissions() {
     'name' => 'show format selection for message_type_category',
     'roles' => array(
       'Admin' => 'Admin',
-      'Community Moderator' => 'Community Moderator',
-      'Content Manager' => 'Content Manager',
     ),
     'module' => 'better_formats',
   );
@@ -713,8 +703,6 @@ function collabco_permissions_feature_user_default_permissions() {
     'name' => 'show format selection for node',
     'roles' => array(
       'Admin' => 'Admin',
-      'Community Moderator' => 'Community Moderator',
-      'Content Manager' => 'Content Manager',
     ),
     'module' => 'better_formats',
   );
@@ -724,8 +712,6 @@ function collabco_permissions_feature_user_default_permissions() {
     'name' => 'show format selection for og_membership',
     'roles' => array(
       'Admin' => 'Admin',
-      'Community Moderator' => 'Community Moderator',
-      'Content Manager' => 'Content Manager',
     ),
     'module' => 'better_formats',
   );
@@ -735,8 +721,6 @@ function collabco_permissions_feature_user_default_permissions() {
     'name' => 'show format selection for og_membership_type',
     'roles' => array(
       'Admin' => 'Admin',
-      'Community Moderator' => 'Community Moderator',
-      'Content Manager' => 'Content Manager',
     ),
     'module' => 'better_formats',
   );
@@ -746,8 +730,6 @@ function collabco_permissions_feature_user_default_permissions() {
     'name' => 'show format selection for profile2',
     'roles' => array(
       'Admin' => 'Admin',
-      'Community Moderator' => 'Community Moderator',
-      'Content Manager' => 'Content Manager',
     ),
     'module' => 'better_formats',
   );
@@ -757,8 +739,6 @@ function collabco_permissions_feature_user_default_permissions() {
     'name' => 'show format selection for taxonomy_term',
     'roles' => array(
       'Admin' => 'Admin',
-      'Community Moderator' => 'Community Moderator',
-      'Content Manager' => 'Content Manager',
     ),
     'module' => 'better_formats',
   );
@@ -768,8 +748,6 @@ function collabco_permissions_feature_user_default_permissions() {
     'name' => 'show format selection for user',
     'roles' => array(
       'Admin' => 'Admin',
-      'Community Moderator' => 'Community Moderator',
-      'Content Manager' => 'Content Manager',
     ),
     'module' => 'better_formats',
   );
@@ -779,7 +757,6 @@ function collabco_permissions_feature_user_default_permissions() {
     'name' => 'show format tips',
     'roles' => array(
       'Admin' => 'Admin',
-      'Content Manager' => 'Content Manager',
     ),
     'module' => 'better_formats',
   );
@@ -789,8 +766,6 @@ function collabco_permissions_feature_user_default_permissions() {
     'name' => 'show more format tips link',
     'roles' => array(
       'Admin' => 'Admin',
-      'Community Moderator' => 'Community Moderator',
-      'Content Manager' => 'Content Manager',
     ),
     'module' => 'better_formats',
   );
@@ -899,6 +874,8 @@ function collabco_permissions_feature_user_default_permissions() {
     'name' => 'view the administration theme',
     'roles' => array(
       'Admin' => 'Admin',
+      'Community Moderator' => 'Community Moderator',
+      'Content Manager' => 'Content Manager',
     ),
     'module' => 'system',
   );
