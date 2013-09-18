@@ -28,7 +28,6 @@ function collabco_permissions_feature_user_default_permissions() {
       'Admin' => 'Admin',
       'Community Moderator' => 'Community Moderator',
       'Content Manager' => 'Content Manager',
-      'authenticated user' => 'authenticated user',
     ),
     'module' => 'system',
   );
@@ -268,6 +267,7 @@ function collabco_permissions_feature_user_default_permissions() {
     'name' => 'administer nodes',
     'roles' => array(
       'Admin' => 'Admin',
+      'authenticated user' => 'authenticated user',
     ),
     'module' => 'node',
   );
@@ -622,6 +622,8 @@ function collabco_permissions_feature_user_default_permissions() {
     'name' => 'masquerade as user',
     'roles' => array(
       'Admin' => 'Admin',
+      'Community Moderator' => 'Community Moderator',
+      'Content Manager' => 'Content Manager',
     ),
     'module' => 'masquerade',
   );
@@ -758,18 +760,14 @@ function collabco_permissions_feature_user_default_permissions() {
   // Exported permission: show format tips.
   $permissions['show format tips'] = array(
     'name' => 'show format tips',
-    'roles' => array(
-      'Admin' => 'Admin',
-    ),
+    'roles' => array(),
     'module' => 'better_formats',
   );
 
   // Exported permission: show more format tips link.
   $permissions['show more format tips link'] = array(
     'name' => 'show more format tips link',
-    'roles' => array(
-      'Admin' => 'Admin',
-    ),
+    'roles' => array(),
     'module' => 'better_formats',
   );
 
