@@ -267,7 +267,8 @@ function collabco_permissions_feature_user_default_permissions() {
     'name' => 'administer nodes',
     'roles' => array(
       'Admin' => 'Admin',
-      'authenticated user' => 'authenticated user',
+      'Community Moderator' => 'Community Moderator',
+      'Content Manager' => 'Content Manager',
     ),
     'module' => 'node',
   );
