@@ -453,7 +453,8 @@ function collabco_permissions_feature_user_default_permissions() {
     'name' => 'create basic_page content',
     'roles' => array(
       'Admin' => 'Admin',
-      'authenticated user' => 'authenticated user',
+      'Community Moderator' => 'Community Moderator',
+      'Content Manager' => 'Content Manager',
     ),
     'module' => 'node',
   );
@@ -502,7 +503,8 @@ function collabco_permissions_feature_user_default_permissions() {
     'name' => 'delete own basic_page content',
     'roles' => array(
       'Admin' => 'Admin',
-      'authenticated user' => 'authenticated user',
+      'Community Moderator' => 'Community Moderator',
+      'Content Manager' => 'Content Manager',
     ),
     'module' => 'node',
   );
@@ -512,6 +514,8 @@ function collabco_permissions_feature_user_default_permissions() {
     'name' => 'delete revisions',
     'roles' => array(
       'Admin' => 'Admin',
+      'Community Moderator' => 'Community Moderator',
+      'Content Manager' => 'Content Manager',
     ),
     'module' => 'node',
   );
@@ -541,7 +545,8 @@ function collabco_permissions_feature_user_default_permissions() {
     'name' => 'edit own basic_page content',
     'roles' => array(
       'Admin' => 'Admin',
-      'authenticated user' => 'authenticated user',
+      'Community Moderator' => 'Community Moderator',
+      'Content Manager' => 'Content Manager',
     ),
     'module' => 'node',
   );
