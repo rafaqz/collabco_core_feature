@@ -34,7 +34,6 @@ dependencies[] = realname
 dependencies[] = recaptcha
 dependencies[] = register_preapproved
 dependencies[] = search
-dependencies[] = statistics
 dependencies[] = stringoverrides
 dependencies[] = system
 dependencies[] = taxonomy
