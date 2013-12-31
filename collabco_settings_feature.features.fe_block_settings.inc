@@ -93,34 +93,5 @@ function collabco_settings_feature_default_fe_block_settings() {
     'visibility' => 0,
   );
 
-  $export['user-login'] = array(
-    'cache' => -1,
-    'css_class' => '',
-    'custom' => 0,
-    'delta' => 'login',
-    'module' => 'user',
-    'node_types' => array(),
-    'pages' => '<front>',
-    'roles' => array(
-      'anonymous user' => 1,
-    ),
-    'themes' => array(
-      'custom_theme' => array(
-        'region' => '',
-        'status' => 0,
-        'theme' => 'custom_theme',
-        'weight' => 0,
-      ),
-      'seven' => array(
-        'region' => '',
-        'status' => 0,
-        'theme' => 'seven',
-        'weight' => 0,
-      ),
-    ),
-    'title' => '',
-    'visibility' => 1,
-  );
-
   return $export;
 }
