@@ -16,16 +16,10 @@ function collabco_permissions_feature_user_default_roles() {
     'weight' => 2,
   );
 
-  // Exported role: Community Moderator.
-  $roles['Community Moderator'] = array(
-    'name' => 'Community Moderator',
+  // Exported role: Moderator.
+  $roles['Moderator'] = array(
+    'name' => 'Moderator',
     'weight' => 4,
-  );
-
-  // Exported role: Content Manager.
-  $roles['Content Manager'] = array(
-    'name' => 'Content Manager',
-    'weight' => 3,
   );
 
   return $roles;
