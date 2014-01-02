@@ -10,27 +10,29 @@
 function collabco_permissions_feature_user_default_permissions() {
   $permissions = array();
 
-  // Exported permission: 'access administration menu'.
+  // Exported permission: access administration menu.
   $permissions['access administration menu'] = array(
     'name' => 'access administration menu',
     'roles' => array(
       'Admin' => 'Admin',
-      'Moderator' => 'Moderator',
+      'Community Moderator' => 'Community Moderator',
+      'Content Manager' => 'Content Manager',
     ),
     'module' => 'admin_menu',
   );
 
-  // Exported permission: 'access administration pages'.
+  // Exported permission: access administration pages.
   $permissions['access administration pages'] = array(
     'name' => 'access administration pages',
     'roles' => array(
       'Admin' => 'Admin',
-      'Moderator' => 'Moderator',
+      'Community Moderator' => 'Community Moderator',
+      'Content Manager' => 'Content Manager',
     ),
     'module' => 'system',
   );
 
-  // Exported permission: 'access all views'.
+  // Exported permission: access all views.
   $permissions['access all views'] = array(
     'name' => 'access all views',
     'roles' => array(
@@ -39,39 +41,38 @@ function collabco_permissions_feature_user_default_permissions() {
     'module' => 'views',
   );
 
-  // Exported permission: 'access comments'.
+  // Exported permission: access comments.
   $permissions['access comments'] = array(
     'name' => 'access comments',
     'roles' => array(
       'Admin' => 'Admin',
-      'anonymous user' => 'anonymous user',
       'authenticated user' => 'authenticated user',
     ),
     'module' => 'comment',
   );
 
-  // Exported permission: 'access content'.
+  // Exported permission: access content.
   $permissions['access content'] = array(
     'name' => 'access content',
     'roles' => array(
       'Admin' => 'Admin',
-      'anonymous user' => 'anonymous user',
       'authenticated user' => 'authenticated user',
     ),
     'module' => 'node',
   );
 
-  // Exported permission: 'access content overview'.
+  // Exported permission: access content overview.
   $permissions['access content overview'] = array(
     'name' => 'access content overview',
     'roles' => array(
       'Admin' => 'Admin',
-      'Moderator' => 'Moderator',
+      'Community Moderator' => 'Community Moderator',
+      'Content Manager' => 'Content Manager',
     ),
     'module' => 'node',
   );
 
-  // Exported permission: 'access contextual links'.
+  // Exported permission: access contextual links.
   $permissions['access contextual links'] = array(
     'name' => 'access contextual links',
     'roles' => array(
@@ -80,7 +81,7 @@ function collabco_permissions_feature_user_default_permissions() {
     'module' => 'contextual',
   );
 
-  // Exported permission: 'access devel information'.
+  // Exported permission: access devel information.
   $permissions['access devel information'] = array(
     'name' => 'access devel information',
     'roles' => array(
@@ -89,7 +90,7 @@ function collabco_permissions_feature_user_default_permissions() {
     'module' => 'devel',
   );
 
-  // Exported permission: 'access site in maintenance mode'.
+  // Exported permission: access site in maintenance mode.
   $permissions['access site in maintenance mode'] = array(
     'name' => 'access site in maintenance mode',
     'roles' => array(
@@ -98,7 +99,7 @@ function collabco_permissions_feature_user_default_permissions() {
     'module' => 'system',
   );
 
-  // Exported permission: 'access site reports'.
+  // Exported permission: access site reports.
   $permissions['access site reports'] = array(
     'name' => 'access site reports',
     'roles' => array(
@@ -107,7 +108,7 @@ function collabco_permissions_feature_user_default_permissions() {
     'module' => 'system',
   );
 
-  // Exported permission: 'access user profiles'.
+  // Exported permission: access user profiles.
   $permissions['access user profiles'] = array(
     'name' => 'access user profiles',
     'roles' => array(
@@ -117,7 +118,7 @@ function collabco_permissions_feature_user_default_permissions() {
     'module' => 'user',
   );
 
-  // Exported permission: 'administer CAPTCHA settings'.
+  // Exported permission: administer CAPTCHA settings.
   $permissions['administer CAPTCHA settings'] = array(
     'name' => 'administer CAPTCHA settings',
     'roles' => array(
@@ -126,7 +127,7 @@ function collabco_permissions_feature_user_default_permissions() {
     'module' => 'captcha',
   );
 
-  // Exported permission: 'administer Terms and Conditions'.
+  // Exported permission: administer Terms and Conditions.
   $permissions['administer Terms and Conditions'] = array(
     'name' => 'administer Terms and Conditions',
     'roles' => array(
@@ -135,7 +136,7 @@ function collabco_permissions_feature_user_default_permissions() {
     'module' => 'legal',
   );
 
-  // Exported permission: 'administer actions'.
+  // Exported permission: administer actions.
   $permissions['administer actions'] = array(
     'name' => 'administer actions',
     'roles' => array(
@@ -144,7 +145,7 @@ function collabco_permissions_feature_user_default_permissions() {
     'module' => 'system',
   );
 
-  // Exported permission: 'administer block classes'.
+  // Exported permission: administer block classes.
   $permissions['administer block classes'] = array(
     'name' => 'administer block classes',
     'roles' => array(
@@ -153,7 +154,7 @@ function collabco_permissions_feature_user_default_permissions() {
     'module' => 'block_class',
   );
 
-  // Exported permission: 'administer blocks'.
+  // Exported permission: administer blocks.
   $permissions['administer blocks'] = array(
     'name' => 'administer blocks',
     'roles' => array(
@@ -162,7 +163,7 @@ function collabco_permissions_feature_user_default_permissions() {
     'module' => 'block',
   );
 
-  // Exported permission: 'administer ckeditor'.
+  // Exported permission: administer ckeditor.
   $permissions['administer ckeditor'] = array(
     'name' => 'administer ckeditor',
     'roles' => array(
@@ -171,7 +172,7 @@ function collabco_permissions_feature_user_default_permissions() {
     'module' => 'ckeditor',
   );
 
-  // Exported permission: 'administer comments'.
+  // Exported permission: administer comments.
   $permissions['administer comments'] = array(
     'name' => 'administer comments',
     'roles' => array(
@@ -180,7 +181,7 @@ function collabco_permissions_feature_user_default_permissions() {
     'module' => 'comment',
   );
 
-  // Exported permission: 'administer content types'.
+  // Exported permission: administer content types.
   $permissions['administer content types'] = array(
     'name' => 'administer content types',
     'roles' => array(
@@ -189,7 +190,7 @@ function collabco_permissions_feature_user_default_permissions() {
     'module' => 'node',
   );
 
-  // Exported permission: 'administer features'.
+  // Exported permission: administer features.
   $permissions['administer features'] = array(
     'name' => 'administer features',
     'roles' => array(
@@ -198,7 +199,7 @@ function collabco_permissions_feature_user_default_permissions() {
     'module' => 'features',
   );
 
-  // Exported permission: 'administer filters'.
+  // Exported permission: administer filters.
   $permissions['administer filters'] = array(
     'name' => 'administer filters',
     'roles' => array(
@@ -207,7 +208,7 @@ function collabco_permissions_feature_user_default_permissions() {
     'module' => 'filter',
   );
 
-  // Exported permission: 'administer image styles'.
+  // Exported permission: administer image styles.
   $permissions['administer image styles'] = array(
     'name' => 'administer image styles',
     'roles' => array(
@@ -216,7 +217,7 @@ function collabco_permissions_feature_user_default_permissions() {
     'module' => 'image',
   );
 
-  // Exported permission: 'administer masquerade'.
+  // Exported permission: administer masquerade.
   $permissions['administer masquerade'] = array(
     'name' => 'administer masquerade',
     'roles' => array(
@@ -225,7 +226,7 @@ function collabco_permissions_feature_user_default_permissions() {
     'module' => 'masquerade',
   );
 
-  // Exported permission: 'administer menu'.
+  // Exported permission: administer menu.
   $permissions['administer menu'] = array(
     'name' => 'administer menu',
     'roles' => array(
@@ -234,7 +235,7 @@ function collabco_permissions_feature_user_default_permissions() {
     'module' => 'menu',
   );
 
-  // Exported permission: 'administer message types'.
+  // Exported permission: administer message types.
   $permissions['administer message types'] = array(
     'name' => 'administer message types',
     'roles' => array(
@@ -243,7 +244,7 @@ function collabco_permissions_feature_user_default_permissions() {
     'module' => 'message',
   );
 
-  // Exported permission: 'administer modules'.
+  // Exported permission: administer modules.
   $permissions['administer modules'] = array(
     'name' => 'administer modules',
     'roles' => array(
@@ -252,7 +253,7 @@ function collabco_permissions_feature_user_default_permissions() {
     'module' => 'system',
   );
 
-  // Exported permission: 'administer nodequeue'.
+  // Exported permission: administer nodequeue.
   $permissions['administer nodequeue'] = array(
     'name' => 'administer nodequeue',
     'roles' => array(
@@ -261,17 +262,18 @@ function collabco_permissions_feature_user_default_permissions() {
     'module' => 'nodequeue',
   );
 
-  // Exported permission: 'administer nodes'.
+  // Exported permission: administer nodes.
   $permissions['administer nodes'] = array(
     'name' => 'administer nodes',
     'roles' => array(
       'Admin' => 'Admin',
-      'Moderator' => 'Moderator',
+      'Community Moderator' => 'Community Moderator',
+      'Content Manager' => 'Content Manager',
     ),
     'module' => 'node',
   );
 
-  // Exported permission: 'administer pathauto'.
+  // Exported permission: administer pathauto.
   $permissions['administer pathauto'] = array(
     'name' => 'administer pathauto',
     'roles' => array(
@@ -280,7 +282,7 @@ function collabco_permissions_feature_user_default_permissions() {
     'module' => 'pathauto',
   );
 
-  // Exported permission: 'administer permissions'.
+  // Exported permission: administer permissions.
   $permissions['administer permissions'] = array(
     'name' => 'administer permissions',
     'roles' => array(
@@ -289,17 +291,18 @@ function collabco_permissions_feature_user_default_permissions() {
     'module' => 'user',
   );
 
-  // Exported permission: 'administer pre-approved'.
+  // Exported permission: administer pre-approved.
   $permissions['administer pre-approved'] = array(
     'name' => 'administer pre-approved',
     'roles' => array(
       'Admin' => 'Admin',
-      'Moderator' => 'Moderator',
+      'Community Moderator' => 'Community Moderator',
+      'Content Manager' => 'Content Manager',
     ),
     'module' => 'register_preapproved',
   );
 
-  // Exported permission: 'administer pre-approved roles'.
+  // Exported permission: administer pre-approved roles.
   $permissions['administer pre-approved roles'] = array(
     'name' => 'administer pre-approved roles',
     'roles' => array(
@@ -308,7 +311,7 @@ function collabco_permissions_feature_user_default_permissions() {
     'module' => 'register_preapproved',
   );
 
-  // Exported permission: 'administer realname'.
+  // Exported permission: administer realname.
   $permissions['administer realname'] = array(
     'name' => 'administer realname',
     'roles' => array(
@@ -317,7 +320,7 @@ function collabco_permissions_feature_user_default_permissions() {
     'module' => 'realname',
   );
 
-  // Exported permission: 'administer recaptcha'.
+  // Exported permission: administer recaptcha.
   $permissions['administer recaptcha'] = array(
     'name' => 'administer recaptcha',
     'roles' => array(
@@ -326,7 +329,7 @@ function collabco_permissions_feature_user_default_permissions() {
     'module' => 'recaptcha',
   );
 
-  // Exported permission: 'administer site configuration'.
+  // Exported permission: administer site configuration.
   $permissions['administer site configuration'] = array(
     'name' => 'administer site configuration',
     'roles' => array(
@@ -335,7 +338,7 @@ function collabco_permissions_feature_user_default_permissions() {
     'module' => 'system',
   );
 
-  // Exported permission: 'administer software updates'.
+  // Exported permission: administer software updates.
   $permissions['administer software updates'] = array(
     'name' => 'administer software updates',
     'roles' => array(
@@ -344,7 +347,7 @@ function collabco_permissions_feature_user_default_permissions() {
     'module' => 'system',
   );
 
-  // Exported permission: 'administer string overrides'.
+  // Exported permission: administer string overrides.
   $permissions['administer string overrides'] = array(
     'name' => 'administer string overrides',
     'roles' => array(
@@ -353,7 +356,7 @@ function collabco_permissions_feature_user_default_permissions() {
     'module' => 'stringoverrides',
   );
 
-  // Exported permission: 'administer taxonomy'.
+  // Exported permission: administer taxonomy.
   $permissions['administer taxonomy'] = array(
     'name' => 'administer taxonomy',
     'roles' => array(
@@ -362,7 +365,7 @@ function collabco_permissions_feature_user_default_permissions() {
     'module' => 'taxonomy',
   );
 
-  // Exported permission: 'administer themes'.
+  // Exported permission: administer themes.
   $permissions['administer themes'] = array(
     'name' => 'administer themes',
     'roles' => array(
@@ -371,7 +374,7 @@ function collabco_permissions_feature_user_default_permissions() {
     'module' => 'system',
   );
 
-  // Exported permission: 'administer url aliases'.
+  // Exported permission: administer url aliases.
   $permissions['administer url aliases'] = array(
     'name' => 'administer url aliases',
     'roles' => array(
@@ -380,17 +383,18 @@ function collabco_permissions_feature_user_default_permissions() {
     'module' => 'path',
   );
 
-  // Exported permission: 'administer users'.
+  // Exported permission: administer users.
   $permissions['administer users'] = array(
     'name' => 'administer users',
     'roles' => array(
       'Admin' => 'Admin',
-      'Moderator' => 'Moderator',
+      'Community Moderator' => 'Community Moderator',
+      'Content Manager' => 'Content Manager',
     ),
     'module' => 'user',
   );
 
-  // Exported permission: 'administer uuid'.
+  // Exported permission: administer uuid.
   $permissions['administer uuid'] = array(
     'name' => 'administer uuid',
     'roles' => array(
@@ -399,7 +403,7 @@ function collabco_permissions_feature_user_default_permissions() {
     'module' => 'uuid',
   );
 
-  // Exported permission: 'administer views'.
+  // Exported permission: administer views.
   $permissions['administer views'] = array(
     'name' => 'administer views',
     'roles' => array(
@@ -408,7 +412,7 @@ function collabco_permissions_feature_user_default_permissions() {
     'module' => 'views',
   );
 
-  // Exported permission: 'block IP addresses'.
+  // Exported permission: block IP addresses.
   $permissions['block IP addresses'] = array(
     'name' => 'block IP addresses',
     'roles' => array(
@@ -417,7 +421,7 @@ function collabco_permissions_feature_user_default_permissions() {
     'module' => 'system',
   );
 
-  // Exported permission: 'bypass node access'.
+  // Exported permission: bypass node access.
   $permissions['bypass node access'] = array(
     'name' => 'bypass node access',
     'roles' => array(
@@ -426,7 +430,7 @@ function collabco_permissions_feature_user_default_permissions() {
     'module' => 'node',
   );
 
-  // Exported permission: 'cancel account'.
+  // Exported permission: cancel account.
   $permissions['cancel account'] = array(
     'name' => 'cancel account',
     'roles' => array(
@@ -435,7 +439,7 @@ function collabco_permissions_feature_user_default_permissions() {
     'module' => 'user',
   );
 
-  // Exported permission: 'change own username'.
+  // Exported permission: change own username.
   $permissions['change own username'] = array(
     'name' => 'change own username',
     'roles' => array(
@@ -445,17 +449,18 @@ function collabco_permissions_feature_user_default_permissions() {
     'module' => 'user',
   );
 
-  // Exported permission: 'create basic_page content'.
+  // Exported permission: create basic_page content.
   $permissions['create basic_page content'] = array(
     'name' => 'create basic_page content',
     'roles' => array(
       'Admin' => 'Admin',
-      'Moderator' => 'Moderator',
+      'Community Moderator' => 'Community Moderator',
+      'Content Manager' => 'Content Manager',
     ),
     'module' => 'node',
   );
 
-  // Exported permission: 'create messages'.
+  // Exported permission: create messages.
   $permissions['create messages'] = array(
     'name' => 'create messages',
     'roles' => array(
@@ -465,7 +470,7 @@ function collabco_permissions_feature_user_default_permissions() {
     'module' => 'message',
   );
 
-  // Exported permission: 'create url aliases'.
+  // Exported permission: create url aliases.
   $permissions['create url aliases'] = array(
     'name' => 'create url aliases',
     'roles' => array(
@@ -474,7 +479,7 @@ function collabco_permissions_feature_user_default_permissions() {
     'module' => 'path',
   );
 
-  // Exported permission: 'customize ckeditor'.
+  // Exported permission: customize ckeditor.
   $permissions['customize ckeditor'] = array(
     'name' => 'customize ckeditor',
     'roles' => array(
@@ -483,37 +488,40 @@ function collabco_permissions_feature_user_default_permissions() {
     'module' => 'ckeditor',
   );
 
-  // Exported permission: 'delete any basic_page content'.
+  // Exported permission: delete any basic_page content.
   $permissions['delete any basic_page content'] = array(
     'name' => 'delete any basic_page content',
     'roles' => array(
       'Admin' => 'Admin',
-      'Moderator' => 'Moderator',
+      'Community Moderator' => 'Community Moderator',
+      'Content Manager' => 'Content Manager',
     ),
     'module' => 'node',
   );
 
-  // Exported permission: 'delete own basic_page content'.
+  // Exported permission: delete own basic_page content.
   $permissions['delete own basic_page content'] = array(
     'name' => 'delete own basic_page content',
     'roles' => array(
       'Admin' => 'Admin',
-      'Moderator' => 'Moderator',
+      'Community Moderator' => 'Community Moderator',
+      'Content Manager' => 'Content Manager',
     ),
     'module' => 'node',
   );
 
-  // Exported permission: 'delete revisions'.
+  // Exported permission: delete revisions.
   $permissions['delete revisions'] = array(
     'name' => 'delete revisions',
     'roles' => array(
       'Admin' => 'Admin',
-      'Moderator' => 'Moderator',
+      'Community Moderator' => 'Community Moderator',
+      'Content Manager' => 'Content Manager',
     ),
     'module' => 'node',
   );
 
-  // Exported permission: 'display drupal links'.
+  // Exported permission: display drupal links.
   $permissions['display drupal links'] = array(
     'name' => 'display drupal links',
     'roles' => array(
@@ -522,27 +530,29 @@ function collabco_permissions_feature_user_default_permissions() {
     'module' => 'admin_menu',
   );
 
-  // Exported permission: 'edit any basic_page content'.
+  // Exported permission: edit any basic_page content.
   $permissions['edit any basic_page content'] = array(
     'name' => 'edit any basic_page content',
     'roles' => array(
       'Admin' => 'Admin',
-      'Moderator' => 'Moderator',
+      'Community Moderator' => 'Community Moderator',
+      'Content Manager' => 'Content Manager',
     ),
     'module' => 'node',
   );
 
-  // Exported permission: 'edit own basic_page content'.
+  // Exported permission: edit own basic_page content.
   $permissions['edit own basic_page content'] = array(
     'name' => 'edit own basic_page content',
     'roles' => array(
       'Admin' => 'Admin',
-      'Moderator' => 'Moderator',
+      'Community Moderator' => 'Community Moderator',
+      'Content Manager' => 'Content Manager',
     ),
     'module' => 'node',
   );
 
-  // Exported permission: 'edit own comments'.
+  // Exported permission: edit own comments.
   $permissions['edit own comments'] = array(
     'name' => 'edit own comments',
     'roles' => array(
@@ -552,14 +562,14 @@ function collabco_permissions_feature_user_default_permissions() {
     'module' => 'comment',
   );
 
-  // Exported permission: 'execute php code'.
+  // Exported permission: execute php code.
   $permissions['execute php code'] = array(
     'name' => 'execute php code',
     'roles' => array(),
     'module' => 'devel',
   );
 
-  // Exported permission: 'flush caches'.
+  // Exported permission: flush caches.
   $permissions['flush caches'] = array(
     'name' => 'flush caches',
     'roles' => array(
@@ -568,7 +578,7 @@ function collabco_permissions_feature_user_default_permissions() {
     'module' => 'admin_menu',
   );
 
-  // Exported permission: 'manage features'.
+  // Exported permission: manage features.
   $permissions['manage features'] = array(
     'name' => 'manage features',
     'roles' => array(
@@ -577,27 +587,29 @@ function collabco_permissions_feature_user_default_permissions() {
     'module' => 'features',
   );
 
-  // Exported permission: 'manipulate all queues'.
+  // Exported permission: manipulate all queues.
   $permissions['manipulate all queues'] = array(
     'name' => 'manipulate all queues',
     'roles' => array(
       'Admin' => 'Admin',
-      'Moderator' => 'Moderator',
+      'Community Moderator' => 'Community Moderator',
+      'Content Manager' => 'Content Manager',
     ),
     'module' => 'nodequeue',
   );
 
-  // Exported permission: 'manipulate queues'.
+  // Exported permission: manipulate queues.
   $permissions['manipulate queues'] = array(
     'name' => 'manipulate queues',
     'roles' => array(
       'Admin' => 'Admin',
-      'Moderator' => 'Moderator',
+      'Community Moderator' => 'Community Moderator',
+      'Content Manager' => 'Content Manager',
     ),
     'module' => 'nodequeue',
   );
 
-  // Exported permission: 'masquerade as admin'.
+  // Exported permission: masquerade as admin.
   $permissions['masquerade as admin'] = array(
     'name' => 'masquerade as admin',
     'roles' => array(
@@ -606,17 +618,18 @@ function collabco_permissions_feature_user_default_permissions() {
     'module' => 'masquerade',
   );
 
-  // Exported permission: 'masquerade as user'.
+  // Exported permission: masquerade as user.
   $permissions['masquerade as user'] = array(
     'name' => 'masquerade as user',
     'roles' => array(
       'Admin' => 'Admin',
-      'Moderator' => 'Moderator',
+      'Community Moderator' => 'Community Moderator',
+      'Content Manager' => 'Content Manager',
     ),
     'module' => 'masquerade',
   );
 
-  // Exported permission: 'notify of path changes'.
+  // Exported permission: notify of path changes.
   $permissions['notify of path changes'] = array(
     'name' => 'notify of path changes',
     'roles' => array(
@@ -625,7 +638,7 @@ function collabco_permissions_feature_user_default_permissions() {
     'module' => 'pathauto',
   );
 
-  // Exported permission: 'post comments'.
+  // Exported permission: post comments.
   $permissions['post comments'] = array(
     'name' => 'post comments',
     'roles' => array(
@@ -635,17 +648,18 @@ function collabco_permissions_feature_user_default_permissions() {
     'module' => 'comment',
   );
 
-  // Exported permission: 'revert revisions'.
+  // Exported permission: revert revisions.
   $permissions['revert revisions'] = array(
     'name' => 'revert revisions',
     'roles' => array(
       'Admin' => 'Admin',
-      'Moderator' => 'Moderator',
+      'Community Moderator' => 'Community Moderator',
+      'Content Manager' => 'Content Manager',
     ),
     'module' => 'node',
   );
 
-  // Exported permission: 'select account cancellation method'.
+  // Exported permission: select account cancellation method.
   $permissions['select account cancellation method'] = array(
     'name' => 'select account cancellation method',
     'roles' => array(
@@ -654,7 +668,7 @@ function collabco_permissions_feature_user_default_permissions() {
     'module' => 'user',
   );
 
-  // Exported permission: 'show format selection for comment'.
+  // Exported permission: show format selection for comment.
   $permissions['show format selection for comment'] = array(
     'name' => 'show format selection for comment',
     'roles' => array(
@@ -663,7 +677,7 @@ function collabco_permissions_feature_user_default_permissions() {
     'module' => 'better_formats',
   );
 
-  // Exported permission: 'show format selection for message'.
+  // Exported permission: show format selection for message.
   $permissions['show format selection for message'] = array(
     'name' => 'show format selection for message',
     'roles' => array(
@@ -672,7 +686,7 @@ function collabco_permissions_feature_user_default_permissions() {
     'module' => 'better_formats',
   );
 
-  // Exported permission: 'show format selection for message_type'.
+  // Exported permission: show format selection for message_type.
   $permissions['show format selection for message_type'] = array(
     'name' => 'show format selection for message_type',
     'roles' => array(
@@ -681,7 +695,7 @@ function collabco_permissions_feature_user_default_permissions() {
     'module' => 'better_formats',
   );
 
-  // Exported permission: 'show format selection for message_type_category'.
+  // Exported permission: show format selection for message_type_category.
   $permissions['show format selection for message_type_category'] = array(
     'name' => 'show format selection for message_type_category',
     'roles' => array(
@@ -690,7 +704,7 @@ function collabco_permissions_feature_user_default_permissions() {
     'module' => 'better_formats',
   );
 
-  // Exported permission: 'show format selection for node'.
+  // Exported permission: show format selection for node.
   $permissions['show format selection for node'] = array(
     'name' => 'show format selection for node',
     'roles' => array(
@@ -699,7 +713,7 @@ function collabco_permissions_feature_user_default_permissions() {
     'module' => 'better_formats',
   );
 
-  // Exported permission: 'show format selection for og_membership'.
+  // Exported permission: show format selection for og_membership.
   $permissions['show format selection for og_membership'] = array(
     'name' => 'show format selection for og_membership',
     'roles' => array(
@@ -708,7 +722,7 @@ function collabco_permissions_feature_user_default_permissions() {
     'module' => 'better_formats',
   );
 
-  // Exported permission: 'show format selection for og_membership_type'.
+  // Exported permission: show format selection for og_membership_type.
   $permissions['show format selection for og_membership_type'] = array(
     'name' => 'show format selection for og_membership_type',
     'roles' => array(
@@ -717,7 +731,7 @@ function collabco_permissions_feature_user_default_permissions() {
     'module' => 'better_formats',
   );
 
-  // Exported permission: 'show format selection for profile2'.
+  // Exported permission: show format selection for profile2.
   $permissions['show format selection for profile2'] = array(
     'name' => 'show format selection for profile2',
     'roles' => array(
@@ -726,7 +740,7 @@ function collabco_permissions_feature_user_default_permissions() {
     'module' => 'better_formats',
   );
 
-  // Exported permission: 'show format selection for taxonomy_term'.
+  // Exported permission: show format selection for taxonomy_term.
   $permissions['show format selection for taxonomy_term'] = array(
     'name' => 'show format selection for taxonomy_term',
     'roles' => array(
@@ -735,7 +749,7 @@ function collabco_permissions_feature_user_default_permissions() {
     'module' => 'better_formats',
   );
 
-  // Exported permission: 'show format selection for user'.
+  // Exported permission: show format selection for user.
   $permissions['show format selection for user'] = array(
     'name' => 'show format selection for user',
     'roles' => array(
@@ -744,21 +758,21 @@ function collabco_permissions_feature_user_default_permissions() {
     'module' => 'better_formats',
   );
 
-  // Exported permission: 'show format tips'.
+  // Exported permission: show format tips.
   $permissions['show format tips'] = array(
     'name' => 'show format tips',
     'roles' => array(),
     'module' => 'better_formats',
   );
 
-  // Exported permission: 'show more format tips link'.
+  // Exported permission: show more format tips link.
   $permissions['show more format tips link'] = array(
     'name' => 'show more format tips link',
     'roles' => array(),
     'module' => 'better_formats',
   );
 
-  // Exported permission: 'skip CAPTCHA'.
+  // Exported permission: skip CAPTCHA.
   $permissions['skip CAPTCHA'] = array(
     'name' => 'skip CAPTCHA',
     'roles' => array(
@@ -767,7 +781,7 @@ function collabco_permissions_feature_user_default_permissions() {
     'module' => 'captcha',
   );
 
-  // Exported permission: 'skip comment approval'.
+  // Exported permission: skip comment approval.
   $permissions['skip comment approval'] = array(
     'name' => 'skip comment approval',
     'roles' => array(
@@ -777,7 +791,7 @@ function collabco_permissions_feature_user_default_permissions() {
     'module' => 'comment',
   );
 
-  // Exported permission: 'switch users'.
+  // Exported permission: switch users.
   $permissions['switch users'] = array(
     'name' => 'switch users',
     'roles' => array(
@@ -786,18 +800,19 @@ function collabco_permissions_feature_user_default_permissions() {
     'module' => 'devel',
   );
 
-  // Exported permission: 'use text format filtered_html'.
+  // Exported permission: use text format filtered_html.
   $permissions['use text format filtered_html'] = array(
     'name' => 'use text format filtered_html',
     'roles' => array(
       'Admin' => 'Admin',
-      'Moderator' => 'Moderator',
+      'Community Moderator' => 'Community Moderator',
+      'Content Manager' => 'Content Manager',
       'authenticated user' => 'authenticated user',
     ),
     'module' => 'filter',
   );
 
-  // Exported permission: 'use text format full_html'.
+  // Exported permission: use text format full_html.
   $permissions['use text format full_html'] = array(
     'name' => 'use text format full_html',
     'roles' => array(
@@ -806,7 +821,7 @@ function collabco_permissions_feature_user_default_permissions() {
     'module' => 'filter',
   );
 
-  // Exported permission: 'use text format php_code'.
+  // Exported permission: use text format php_code.
   $permissions['use text format php_code'] = array(
     'name' => 'use text format php_code',
     'roles' => array(
@@ -815,7 +830,7 @@ function collabco_permissions_feature_user_default_permissions() {
     'module' => 'filter',
   );
 
-  // Exported permission: 'view Terms and Conditions'.
+  // Exported permission: view Terms and Conditions.
   $permissions['view Terms and Conditions'] = array(
     'name' => 'view Terms and Conditions',
     'roles' => array(
@@ -825,40 +840,41 @@ function collabco_permissions_feature_user_default_permissions() {
     'module' => 'legal',
   );
 
-  // Exported permission: 'view date repeats'.
+  // Exported permission: view date repeats.
   $permissions['view date repeats'] = array(
     'name' => 'view date repeats',
     'roles' => array(),
     'module' => 'date_repeat_field',
   );
 
-  // Exported permission: 'view own unpublished content'.
+  // Exported permission: view own unpublished content.
   $permissions['view own unpublished content'] = array(
     'name' => 'view own unpublished content',
     'roles' => array(
       'Admin' => 'Admin',
-      'anonymous user' => 'anonymous user',
       'authenticated user' => 'authenticated user',
     ),
     'module' => 'node',
   );
 
-  // Exported permission: 'view revisions'.
+  // Exported permission: view revisions.
   $permissions['view revisions'] = array(
     'name' => 'view revisions',
     'roles' => array(
       'Admin' => 'Admin',
-      'Moderator' => 'Moderator',
+      'Community Moderator' => 'Community Moderator',
+      'Content Manager' => 'Content Manager',
     ),
     'module' => 'node',
   );
 
-  // Exported permission: 'view the administration theme'.
+  // Exported permission: view the administration theme.
   $permissions['view the administration theme'] = array(
     'name' => 'view the administration theme',
     'roles' => array(
       'Admin' => 'Admin',
-      'Moderator' => 'Moderator',
+      'Community Moderator' => 'Community Moderator',
+      'Content Manager' => 'Content Manager',
     ),
     'module' => 'system',
   );
