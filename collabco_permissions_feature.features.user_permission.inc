@@ -92,6 +92,15 @@ function collabco_permissions_feature_user_default_permissions() {
     'module' => 'devel',
   );
 
+  // Exported permission: 'access rules debug'.
+  $permissions['access rules debug'] = array(
+    'name' => 'access rules debug',
+    'roles' => array(
+      'Admin' => 'Admin',
+    ),
+    'module' => 'rules',
+  );
+
   // Exported permission: 'access site in maintenance mode'.
   $permissions['access site in maintenance mode'] = array(
     'name' => 'access site in maintenance mode',
@@ -331,6 +340,24 @@ function collabco_permissions_feature_user_default_permissions() {
     'module' => 'recaptcha',
   );
 
+  // Exported permission: 'administer redirects'.
+  $permissions['administer redirects'] = array(
+    'name' => 'administer redirects',
+    'roles' => array(
+      'Admin' => 'Admin',
+    ),
+    'module' => 'redirect',
+  );
+
+  // Exported permission: 'administer rules'.
+  $permissions['administer rules'] = array(
+    'name' => 'administer rules',
+    'roles' => array(
+      'Admin' => 'Admin',
+    ),
+    'module' => 'rules',
+  );
+
   // Exported permission: 'administer site configuration'.
   $permissions['administer site configuration'] = array(
     'name' => 'administer site configuration',
@@ -430,6 +457,15 @@ function collabco_permissions_feature_user_default_permissions() {
       'Admin' => 'Admin',
     ),
     'module' => 'node',
+  );
+
+  // Exported permission: 'bypass rules access'.
+  $permissions['bypass rules access'] = array(
+    'name' => 'bypass rules access',
+    'roles' => array(
+      'Admin' => 'Admin',
+    ),
+    'module' => 'rules',
   );
 
   // Exported permission: 'cancel account'.
@@ -580,6 +616,13 @@ function collabco_permissions_feature_user_default_permissions() {
     'module' => 'admin_menu',
   );
 
+  // Exported permission: 'generate features'.
+  $permissions['generate features'] = array(
+    'name' => 'generate features',
+    'roles' => array(),
+    'module' => 'features',
+  );
+
   // Exported permission: 'manage features'.
   $permissions['manage features'] = array(
     'name' => 'manage features',
@@ -679,6 +722,13 @@ function collabco_permissions_feature_user_default_permissions() {
     'module' => 'better_formats',
   );
 
+  // Exported permission: 'show format selection for flagging'.
+  $permissions['show format selection for flagging'] = array(
+    'name' => 'show format selection for flagging',
+    'roles' => array(),
+    'module' => 'better_formats',
+  );
+
   // Exported permission: 'show format selection for message'.
   $permissions['show format selection for message'] = array(
     'name' => 'show format selection for message',
@@ -739,6 +789,13 @@ function collabco_permissions_feature_user_default_permissions() {
     'roles' => array(
       'Admin' => 'Admin',
     ),
+    'module' => 'better_formats',
+  );
+
+  // Exported permission: 'show format selection for rules_config'.
+  $permissions['show format selection for rules_config'] = array(
+    'name' => 'show format selection for rules_config',
+    'roles' => array(),
     'module' => 'better_formats',
   );
 
