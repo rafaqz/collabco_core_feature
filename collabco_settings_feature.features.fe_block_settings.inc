@@ -23,10 +23,10 @@ function collabco_settings_feature_default_fe_block_settings() {
     'roles' => array(),
     'themes' => array(
       'custom_zurb' => array(
-        'region' => '',
-        'status' => 0,
+        'region' => 'sidebar_second',
+        'status' => 1,
         'theme' => 'custom_zurb',
-        'weight' => 0,
+        'weight' => 10,
       ),
       'seven' => array(
         'region' => '',
