@@ -5,3 +5,38 @@
  */
 
 include_once 'collabco_settings_feature.features.inc';
+
+function collabco_settings_feature_tabs_integration($path, $subpaths = array()) {
+  $tab_links = collabco_settings_feature_tabs_integration_links($path, $subpaths);
+  $tabs = array(
+    'header-content-tab' => array(
+      '#theme' => 'item_list',
+      '#weight' => 20,
+      '#items' => $tab_links,
+      '#prefix' => '<div class="header-content-tab">',
+      '#suffix' => '</div>',
+    ),
+  );
+  return $tabs;
+}
+
+function collabco_settings_feature_tabs_integration_links($path, $subpaths = array()) {
+  $links = array();
+  $current_path = menu_get_item();
+  $integrations = module_invoke_all('collabco_integration');
+  foreach($integrations as $integration) {
+    if (!empty($integration['tab'])) {
+      $subpaths[$integration['tab']['label']] = $integration['tab']['subpath']; 
+    }
+  }
+  foreach($subpaths as $label => $subpath) {
+    $link_path = $path . $subpath;
+    $tab_links[$subpath]['data'] = l($label, $link_path);
+    // Set active li for styling.
+    if ($link_path === $current_path['href']) {
+      $tab_links[$subpath]['class'] = array('active');
+    }
+  }
+  return $tab_links;
+}
+
