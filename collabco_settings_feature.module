@@ -39,4 +39,3 @@ function collabco_settings_feature_tabs_integration_links($path, $subpaths = arr
   }
   return $tab_links;
 }
-
