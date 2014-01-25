@@ -413,6 +413,7 @@ function collabco_settings_feature_strongarm() {
   $strongarm->value = array(
     '' => array(
       'Enter the username to masquerade as.' => '',
+      'Execute' => 'Update',
       'New content' => 'Add a new file',
       'Save' => 'Submit',
     ),
