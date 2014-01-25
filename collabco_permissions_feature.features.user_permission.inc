@@ -79,6 +79,9 @@ function collabco_permissions_feature_user_default_permissions() {
     'name' => 'access contextual links',
     'roles' => array(
       'Admin' => 'Admin',
+      'Community Moderator' => 'Community Moderator',
+      'Content Manager' => 'Content Manager',
+      'authenticated user' => 'authenticated user',
     ),
     'module' => 'contextual',
   );
