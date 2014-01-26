@@ -26,7 +26,9 @@ function collabco_settings_feature_tabs_integration_links($path, $subpaths = arr
   $integrations = module_invoke_all('collabco_integration');
   foreach($integrations as $integration) {
     if (!empty($integration['tab'])) {
-      $subpaths[$integration['tab']['label']] = $integration['tab']['subpath']; 
+      foreach($integration['tab'] as $label => $subpath) {
+        $subpaths[$label] = $subpath;
+      }
     }
   }
   foreach($subpaths as $label => $subpath) {
