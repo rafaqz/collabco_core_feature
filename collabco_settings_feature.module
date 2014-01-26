@@ -26,8 +26,8 @@ function collabco_settings_feature_tabs_integration_links($path, $subpaths = arr
   $integrations = module_invoke_all('collabco_integration');
   foreach($integrations as $integration) {
     if (!empty($integration['tab'])) {
-      foreach($integration['tab'] as $label => $subpath) {
-        $subpaths[$label] = $subpath;
+      foreach($integration['tab'] as $label => $data) {
+        $subpaths[$label] = $data['subpath'];
       }
     }
   }
@@ -40,4 +40,26 @@ function collabco_settings_feature_tabs_integration_links($path, $subpaths = arr
     }
   }
   return $tab_links;
+}
+
+/**
+ * Implements hook_init().
+ * 
+ * Set og context from url query, if its being used with entity prepopulate.
+ */
+function collabco_settings_feature_init() { 
+  // Check if the current path starts with node or user.
+  if (((arg(0) === 'node') || (arg(0) === 'user')) && is_numeric(arg(1))) {
+    // Find all Collabco integrations.
+    $integrations = module_invoke_all('collabco_integration');
+    foreach($integrations as $integration) {
+      if (!empty($integration['tab'])) {
+        foreach($integration['tab'] as $label => $data) {
+          if (!empty($data['node']) && (arg(2) === $data['subpath'])) {
+            context_set('context', 'integration', $data['node']);
+          }
+        }
+      }
+    }
+  }
 }
