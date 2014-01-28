@@ -119,8 +119,6 @@ function collabco_settings_feature_field_default_field_instances() {
   // Included for use with string extractors like potx.
   t('Body');
   t('Comment');
-  t('First Name');
-  t('Last Name');
 
   return $field_instances;
 }
