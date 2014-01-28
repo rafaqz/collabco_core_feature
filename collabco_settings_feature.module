@@ -51,6 +51,12 @@ function collabco_settings_feature_tabs_integration($path, $subpaths = array()) 
   return $tabs;
 }
 
+/**
+ * Build the links for group or user tabs from whatever features 
+ * provide an integration hook with the required details.
+ *
+ * @return array - a drupal render array
+ */
 function collabco_settings_feature_tabs_integration_links($path, $subpaths = array()) {
   $links = array();
   $current_path = menu_get_item();
@@ -58,7 +64,7 @@ function collabco_settings_feature_tabs_integration_links($path, $subpaths = arr
   foreach($integrations as $integration) {
     if (!empty($integration['tab'])) {
       foreach($integration['tab'] as $label => $data) {
-        $subpaths[$label] = $data['subpath'];
+        $subpaths[$label] = '/' . $data['subpath'];
       }
     }
   }
@@ -66,31 +72,9 @@ function collabco_settings_feature_tabs_integration_links($path, $subpaths = arr
     $link_path = $path . $subpath;
     $tab_links[$subpath]['data'] = l($label, $link_path);
     // Set active li for styling.
-    if ($link_path === $current_path['href']) {
+    if ($link_path == $current_path['href']) {
       $tab_links[$subpath]['class'] = array('active');
     }
   }
   return $tab_links;
-}
-
-/**
- * Implements hook_init().
- * 
- * Set og context from url query, if its being used with entity prepopulate.
- */
-function collabco_settings_feature_init() { 
-  // Check if the current path starts with node or user.
-  if (((arg(0) === 'node') || (arg(0) === 'user')) && is_numeric(arg(1))) {
-    // Find all Collabco integrations.
-    $integrations = module_invoke_all('collabco_integration');
-    foreach($integrations as $integration) {
-      if (!empty($integration['tab'])) {
-        foreach($integration['tab'] as $label => $data) {
-          if (!empty($data['node']) && (arg(2) === $data['subpath'])) {
-            context_set('context', 'integration', $data['node']);
-          }
-        }
-      }
-    }
-  }
 }
