@@ -6,6 +6,37 @@
 
 include_once 'collabco_settings_feature.features.inc';
 
+/**
+ * Implements hook_init().
+ * 
+ * We set an integration module context early on, this lets us know we are on an
+ * integration page provided by a feature and which content type it is for. 
+ * Which can be usefull, Such as for filtering other views and turning on/off 
+ * contexts.
+ *
+ */
+function collabco_settings_feature_init() { 
+  // Check if the current path starts with node or user.
+  if (((arg(0) === 'node') || (arg(0) === 'user')) && is_numeric(arg(1))) {
+    // Find all Collabco integrations.
+    $integrations = module_invoke_all('collabco_integration');
+    foreach($integrations as $integration) {
+      if (!empty($integration['tab'])) {
+        foreach($integration['tab'] as $label => $data) {
+          if (!empty($data['node']) && (arg(2) === $data['subpath'])) {
+            context_set('context', 'integration', $data['node']);
+          }
+        }
+      }
+    }
+  }
+}
+
+/**
+ * Build the main tab bar for groups and users.
+ *
+ * @return array - a drupal render array
+ */
 function collabco_settings_feature_tabs_integration($path, $subpaths = array()) {
   $tab_links = collabco_settings_feature_tabs_integration_links($path, $subpaths);
   $tabs = array(
