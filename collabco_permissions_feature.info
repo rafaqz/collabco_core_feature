@@ -24,7 +24,6 @@ dependencies[] = masquerade
 dependencies[] = menu
 dependencies[] = message
 dependencies[] = node
-dependencies[] = nodequeue
 dependencies[] = og
 dependencies[] = path
 dependencies[] = pathauto
