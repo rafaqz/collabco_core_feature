@@ -114,7 +114,6 @@ function collabco_settings_feature_field_default_field_instances() {
     ),
   );
 
-
   // Translatables
   // Included for use with string extractors like potx.
   t('Body');
