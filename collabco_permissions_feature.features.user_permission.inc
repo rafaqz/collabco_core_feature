@@ -438,9 +438,7 @@ function collabco_permissions_feature_user_default_permissions() {
   // Exported permission: 'block IP addresses'.
   $permissions['block IP addresses'] = array(
     'name' => 'block IP addresses',
-    'roles' => array(
-      'Admin' => 'Admin',
-    ),
+    'roles' => array(),
     'module' => 'system',
   );
 
