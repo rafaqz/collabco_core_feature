@@ -137,7 +137,7 @@ function collabco_settings_feature_field_default_field_instances() {
     ),
     'entity_type' => 'node',
     'field_name' => 'tags',
-    'label' => 'tags',
+    'label' => 'Tags',
     'required' => FALSE,
     'settings' => array(
       'user_register_form' => FALSE,
@@ -157,7 +157,7 @@ function collabco_settings_feature_field_default_field_instances() {
   // Included for use with string extractors like potx.
   t('Body');
   t('Comment');
-  t('tags');
+  t('Tags');
 
   return $field_instances;
 }
