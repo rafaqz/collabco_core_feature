@@ -846,6 +846,8 @@ function collabco_permissions_feature_user_default_permissions() {
     'name' => 'use text format full_html',
     'roles' => array(
       'Admin' => 'Admin',
+      'Community Moderator' => 'Community Moderator',
+      'Content Manager' => 'Content Manager',
     ),
     'module' => 'filter',
   );
@@ -855,6 +857,8 @@ function collabco_permissions_feature_user_default_permissions() {
     'name' => 'use text format php_code',
     'roles' => array(
       'Admin' => 'Admin',
+      'Community Moderator' => 'Community Moderator',
+      'Content Manager' => 'Content Manager',
     ),
     'module' => 'filter',
   );
