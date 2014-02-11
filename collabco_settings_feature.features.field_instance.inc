@@ -122,14 +122,14 @@ function collabco_settings_feature_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'above',
+        'label' => 'inline',
         'module' => 'taxonomy',
         'settings' => array(),
         'type' => 'taxonomy_term_reference_link',
         'weight' => 2,
       ),
       'teaser' => array(
-        'label' => 'above',
+        'label' => 'inline',
         'settings' => array(),
         'type' => 'hidden',
         'weight' => 0,
@@ -157,7 +157,7 @@ function collabco_settings_feature_field_default_field_instances() {
   // Included for use with string extractors like potx.
   t('Body');
   t('Comment');
-  t('Tags');
+  t('tags');
 
   return $field_instances;
 }
