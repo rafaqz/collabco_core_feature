@@ -37,7 +37,6 @@ features[variable][] = captcha_description
 features[variable][] = captcha_enable_stats
 features[variable][] = captcha_log_wrong_responses
 features[variable][] = captcha_persistence
-features[variable][] = captcha_response
 features[variable][] = captcha_sid
 features[variable][] = comment_anonymous_basic_page
 features[variable][] = comment_basic_page
