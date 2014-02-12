@@ -132,6 +132,13 @@ function collabco_permissions_feature_user_default_permissions() {
     'module' => 'user',
   );
 
+  // Exported permission: 'add terms in tags'.
+  $permissions['add terms in tags'] = array(
+    'name' => 'add terms in tags',
+    'roles' => array(),
+    'module' => 'taxonomy_access_fix',
+  );
+
   // Exported permission: 'administer CAPTCHA settings'.
   $permissions['administer CAPTCHA settings'] = array(
     'name' => 'administer CAPTCHA settings',
@@ -204,6 +211,15 @@ function collabco_permissions_feature_user_default_permissions() {
     'module' => 'node',
   );
 
+  // Exported permission: 'administer contexts'.
+  $permissions['administer contexts'] = array(
+    'name' => 'administer contexts',
+    'roles' => array(
+      'Admin' => 'Admin',
+    ),
+    'module' => 'context_ui',
+  );
+
   // Exported permission: 'administer features'.
   $permissions['administer features'] = array(
     'name' => 'administer features',
@@ -238,6 +254,15 @@ function collabco_permissions_feature_user_default_permissions() {
       'Admin' => 'Admin',
     ),
     'module' => 'masquerade',
+  );
+
+  // Exported permission: 'administer media'.
+  $permissions['administer media'] = array(
+    'name' => 'administer media',
+    'roles' => array(
+      'Admin' => 'Admin',
+    ),
+    'module' => 'media',
   );
 
   // Exported permission: 'administer menu'.
@@ -350,6 +375,13 @@ function collabco_permissions_feature_user_default_permissions() {
       'Admin' => 'Admin',
     ),
     'module' => 'rules',
+  );
+
+  // Exported permission: 'administer search'.
+  $permissions['administer search'] = array(
+    'name' => 'administer search',
+    'roles' => array(),
+    'module' => 'search',
   );
 
   // Exported permission: 'administer site configuration'.
@@ -479,6 +511,15 @@ function collabco_permissions_feature_user_default_permissions() {
     'module' => 'user',
   );
 
+  // Exported permission: 'context ajax block access'.
+  $permissions['context ajax block access'] = array(
+    'name' => 'context ajax block access',
+    'roles' => array(
+      'Admin' => 'Admin',
+    ),
+    'module' => 'context_ui',
+  );
+
   // Exported permission: 'create basic_page content'.
   $permissions['create basic_page content'] = array(
     'name' => 'create basic_page content',
@@ -551,6 +592,13 @@ function collabco_permissions_feature_user_default_permissions() {
     'module' => 'node',
   );
 
+  // Exported permission: 'delete terms in tags'.
+  $permissions['delete terms in tags'] = array(
+    'name' => 'delete terms in tags',
+    'roles' => array(),
+    'module' => 'taxonomy',
+  );
+
   // Exported permission: 'display drupal links'.
   $permissions['display drupal links'] = array(
     'name' => 'display drupal links',
@@ -569,6 +617,17 @@ function collabco_permissions_feature_user_default_permissions() {
       'Content Manager' => 'Content Manager',
     ),
     'module' => 'node',
+  );
+
+  // Exported permission: 'edit media'.
+  $permissions['edit media'] = array(
+    'name' => 'edit media',
+    'roles' => array(
+      'Admin' => 'Admin',
+      'Community Moderator' => 'Community Moderator',
+      'Content Manager' => 'Content Manager',
+    ),
+    'module' => 'media',
   );
 
   // Exported permission: 'edit own basic_page content'.
@@ -592,11 +651,27 @@ function collabco_permissions_feature_user_default_permissions() {
     'module' => 'comment',
   );
 
+  // Exported permission: 'edit terms in tags'.
+  $permissions['edit terms in tags'] = array(
+    'name' => 'edit terms in tags',
+    'roles' => array(),
+    'module' => 'taxonomy',
+  );
+
   // Exported permission: 'execute php code'.
   $permissions['execute php code'] = array(
     'name' => 'execute php code',
     'roles' => array(),
     'module' => 'devel',
+  );
+
+  // Exported permission: 'flag tag_filter'.
+  $permissions['flag tag_filter'] = array(
+    'name' => 'flag tag_filter',
+    'roles' => array(
+      'authenticated user' => 'authenticated user',
+    ),
+    'module' => 'flag',
   );
 
   // Exported permission: 'flush caches'.
@@ -613,6 +688,17 @@ function collabco_permissions_feature_user_default_permissions() {
     'name' => 'generate features',
     'roles' => array(),
     'module' => 'features',
+  );
+
+  // Exported permission: 'import media'.
+  $permissions['import media'] = array(
+    'name' => 'import media',
+    'roles' => array(
+      'Admin' => 'Admin',
+      'Community Moderator' => 'Community Moderator',
+      'Content Manager' => 'Content Manager',
+    ),
+    'module' => 'media',
   );
 
   // Exported permission: 'manage features'.
@@ -674,6 +760,13 @@ function collabco_permissions_feature_user_default_permissions() {
     'module' => 'node',
   );
 
+  // Exported permission: 'search content'.
+  $permissions['search content'] = array(
+    'name' => 'search content',
+    'roles' => array(),
+    'module' => 'search',
+  );
+
   // Exported permission: 'select account cancellation method'.
   $permissions['select account cancellation method'] = array(
     'name' => 'select account cancellation method',
@@ -689,6 +782,13 @@ function collabco_permissions_feature_user_default_permissions() {
     'roles' => array(
       'Admin' => 'Admin',
     ),
+    'module' => 'better_formats',
+  );
+
+  // Exported permission: 'show format selection for file'.
+  $permissions['show format selection for file'] = array(
+    'name' => 'show format selection for file',
+    'roles' => array(),
     'module' => 'better_formats',
   );
 
@@ -829,6 +929,33 @@ function collabco_permissions_feature_user_default_permissions() {
     'module' => 'devel',
   );
 
+  // Exported permission: 'unflag tag_filter'.
+  $permissions['unflag tag_filter'] = array(
+    'name' => 'unflag tag_filter',
+    'roles' => array(
+      'authenticated user' => 'authenticated user',
+    ),
+    'module' => 'flag',
+  );
+
+  // Exported permission: 'use advanced search'.
+  $permissions['use advanced search'] = array(
+    'name' => 'use advanced search',
+    'roles' => array(),
+    'module' => 'search',
+  );
+
+  // Exported permission: 'use text format email'.
+  $permissions['use text format email'] = array(
+    'name' => 'use text format email',
+    'roles' => array(
+      'Admin' => 'Admin',
+      'Community Moderator' => 'Community Moderator',
+      'Content Manager' => 'Content Manager',
+    ),
+    'module' => 'filter',
+  );
+
   // Exported permission: 'use text format filtered_html'.
   $permissions['use text format filtered_html'] = array(
     'name' => 'use text format filtered_html',
@@ -878,6 +1005,19 @@ function collabco_permissions_feature_user_default_permissions() {
     'name' => 'view date repeats',
     'roles' => array(),
     'module' => 'date_repeat_field',
+  );
+
+  // Exported permission: 'view media'.
+  $permissions['view media'] = array(
+    'name' => 'view media',
+    'roles' => array(
+      'Admin' => 'Admin',
+      'Community Moderator' => 'Community Moderator',
+      'Content Manager' => 'Content Manager',
+      'anonymous user' => 'anonymous user',
+      'authenticated user' => 'authenticated user',
+    ),
+    'module' => 'media',
   );
 
   // Exported permission: 'view own unpublished content'.
