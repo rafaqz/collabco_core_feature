@@ -132,13 +132,6 @@ function collabco_permissions_feature_user_default_permissions() {
     'module' => 'user',
   );
 
-  // Exported permission: 'add terms in tags'.
-  $permissions['add terms in tags'] = array(
-    'name' => 'add terms in tags',
-    'roles' => array(),
-    'module' => 'taxonomy_access_fix',
-  );
-
   // Exported permission: 'administer CAPTCHA settings'.
   $permissions['administer CAPTCHA settings'] = array(
     'name' => 'administer CAPTCHA settings',
@@ -592,13 +585,6 @@ function collabco_permissions_feature_user_default_permissions() {
     'module' => 'node',
   );
 
-  // Exported permission: 'delete terms in tags'.
-  $permissions['delete terms in tags'] = array(
-    'name' => 'delete terms in tags',
-    'roles' => array(),
-    'module' => 'taxonomy',
-  );
-
   // Exported permission: 'display drupal links'.
   $permissions['display drupal links'] = array(
     'name' => 'display drupal links',
@@ -649,13 +635,6 @@ function collabco_permissions_feature_user_default_permissions() {
       'authenticated user' => 'authenticated user',
     ),
     'module' => 'comment',
-  );
-
-  // Exported permission: 'edit terms in tags'.
-  $permissions['edit terms in tags'] = array(
-    'name' => 'edit terms in tags',
-    'roles' => array(),
-    'module' => 'taxonomy',
   );
 
   // Exported permission: 'execute php code'.
