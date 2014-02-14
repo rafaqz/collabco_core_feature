@@ -21,10 +21,16 @@ function collabco_settings_feature_init() {
     // Find all Collabco integrations.
     $integrations = module_invoke_all('collabco_integration');
     foreach($integrations as $integration) {
-      if (!empty($integration['tab'])) {
-        foreach($integration['tab'] as $label => $data) {
-          if (!empty($data['node']) && (arg(2) === $data['subpath'])) {
-            context_set('context', 'integration', $data['node']);
+      if (empty($integration['entity']['node'])) {
+        continue;
+      }
+      foreach($integration['entity']['node'] as $bundle => $options) {
+        if (!empty($options['tab'])) {
+          foreach($options['tab'] as $label => $tab_options) {
+            //Check if the integration subpath matches the current subpath.
+            if (arg(2) === $tab_options['subpath']) {
+              context_set('context', 'integration', $bundle);
+            }
           }
         }
       }
@@ -61,11 +67,17 @@ function collabco_settings_feature_tabs_integration_links($path, $subpaths = arr
   $links = array();
   $current_path = menu_get_item();
   $integrations = module_invoke_all('collabco_integration');
-  // Add link path and label from integration, it may not be initially empty.
+  // Add link path and label from integration, $subpaths may allready be
+  // populated.
   foreach($integrations as $integration) {
-    if (!empty($integration['tab'])) {
-      foreach($integration['tab'] as $label => $data) {
-        $subpaths[$label] = '/' . $data['subpath'];
+    if (empty($integration['entity']['node'])) {
+      continue;
+    }
+    foreach($integration['entity']['node'] as $bundle => $options) {
+      if (!empty($options['tab'])) {
+        foreach($options['tab'] as $label => $tab_options) {
+          $subpaths[$label] = '/' . $tab_options['subpath'];
+        }
       }
     }
   }
@@ -82,7 +94,7 @@ function collabco_settings_feature_tabs_integration_links($path, $subpaths = arr
 }
 
 /**
- * Implements hook_collabco_integration().
+ * hook_collabco_integration().
  *
  * A simple way of integrating feature module while keeping them modular, ie
  * they can be turned off without affecting each other or the site aversely.
@@ -97,15 +109,20 @@ function hook_collabco_integration() {
     'off_wiki_feature' => array(
       // Entity will be used in add content links and possibly elsewhere.
       'entity' => array(
-        'node'=> array('bundle'),
-      ),
-      // Provide a link, path and bundle for the group/user tab.
-      // The bundle will be available as the value of the 'integration' context,
-      // which will be active if we are on the provided subpath.
-      'tab' => array(
-        'label' => array(
-          'subpath' => 'subpath',
-          'node' => 'bundle',
+        'node'=> array(
+          'bundle' => array(
+            // Provide and add content link for this bundle.
+            'add_content_link' => TRUE,
+            // Provide a link, path and bundle for the group/user tab.
+            // The bundle will be available as the value of the 'integration' context,
+            // which will be active if we are on the provided subpath.
+            'tab' => array(
+              'label' => array(
+                'subpath' => 'subpath',
+                'node' => 'bundle',
+              ),
+            ),
+          ),
         ),
       ),
       // This view will be altered in a standard way for integrations, removing
@@ -122,6 +139,24 @@ function hook_collabco_integration() {
             'add_content_link' => array(
               'areas' => array('header','footer'),
             ),
+          ),
+        ),
+      ),
+    ),
+  );
+}
+
+/**
+ * Implements hook_collabco_integration().
+ */
+function collabco_settings_feature_collabco_integration() {
+  // Add links to views if a module wants to do that.
+  return array(
+    'collabco_settings_feature' => array(
+      'entity' => array(
+        'node'=> array(
+          'basic_page' => array(
+            'add_content_link' => TRUE,
           ),
         ),
       ),
