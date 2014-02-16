@@ -1,13 +1,13 @@
 <?php
 /**
  * @file
- * collabco_settings_feature.features.field_instance.inc
+ * collabco_core_feature.features.field_instance.inc
  */
 
 /**
  * Implements hook_field_default_field_instances().
  */
-function collabco_settings_feature_field_default_field_instances() {
+function collabco_core_feature_field_default_field_instances() {
   $field_instances = array();
 
   // Exported field_instance: 'comment-comment_node_basic_page-comment_body'

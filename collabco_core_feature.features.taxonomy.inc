@@ -1,13 +1,13 @@
 <?php
 /**
  * @file
- * collabco_settings_feature.features.taxonomy.inc
+ * collabco_core_feature.features.taxonomy.inc
  */
 
 /**
  * Implements hook_taxonomy_default_vocabularies().
  */
-function collabco_settings_feature_taxonomy_default_vocabularies() {
+function collabco_core_feature_taxonomy_default_vocabularies() {
   return array(
     'tags' => array(
       'name' => 'Tags',

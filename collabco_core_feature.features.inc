@@ -1,13 +1,13 @@
 <?php
 /**
  * @file
- * collabco_settings_feature.features.inc
+ * collabco_core_feature.features.inc
  */
 
 /**
  * Implements hook_ctools_plugin_api().
  */
-function collabco_settings_feature_ctools_plugin_api($module = NULL, $api = NULL) {
+function collabco_core_feature_ctools_plugin_api($module = NULL, $api = NULL) {
   if ($module == "strongarm" && $api == "strongarm") {
     return array("version" => "1");
   }
@@ -16,7 +16,7 @@ function collabco_settings_feature_ctools_plugin_api($module = NULL, $api = NULL
 /**
  * Implements hook_node_info().
  */
-function collabco_settings_feature_node_info() {
+function collabco_core_feature_node_info() {
   $items = array(
     'basic_page' => array(
       'name' => t('Basic Page'),
