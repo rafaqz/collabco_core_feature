@@ -513,17 +513,6 @@ function collabco_core_feature_user_default_permissions() {
     'module' => 'context_ui',
   );
 
-  // Exported permission: 'create basic_page content'.
-  $permissions['create basic_page content'] = array(
-    'name' => 'create basic_page content',
-    'roles' => array(
-      'Admin' => 'Admin',
-      'Community Moderator' => 'Community Moderator',
-      'Content Manager' => 'Content Manager',
-    ),
-    'module' => 'node',
-  );
-
   // Exported permission: 'create messages'.
   $permissions['create messages'] = array(
     'name' => 'create messages',
@@ -552,28 +541,6 @@ function collabco_core_feature_user_default_permissions() {
     'module' => 'ckeditor',
   );
 
-  // Exported permission: 'delete any basic_page content'.
-  $permissions['delete any basic_page content'] = array(
-    'name' => 'delete any basic_page content',
-    'roles' => array(
-      'Admin' => 'Admin',
-      'Community Moderator' => 'Community Moderator',
-      'Content Manager' => 'Content Manager',
-    ),
-    'module' => 'node',
-  );
-
-  // Exported permission: 'delete own basic_page content'.
-  $permissions['delete own basic_page content'] = array(
-    'name' => 'delete own basic_page content',
-    'roles' => array(
-      'Admin' => 'Admin',
-      'Community Moderator' => 'Community Moderator',
-      'Content Manager' => 'Content Manager',
-    ),
-    'module' => 'node',
-  );
-
   // Exported permission: 'delete revisions'.
   $permissions['delete revisions'] = array(
     'name' => 'delete revisions',
@@ -594,17 +561,6 @@ function collabco_core_feature_user_default_permissions() {
     'module' => 'admin_menu',
   );
 
-  // Exported permission: 'edit any basic_page content'.
-  $permissions['edit any basic_page content'] = array(
-    'name' => 'edit any basic_page content',
-    'roles' => array(
-      'Admin' => 'Admin',
-      'Community Moderator' => 'Community Moderator',
-      'Content Manager' => 'Content Manager',
-    ),
-    'module' => 'node',
-  );
-
   // Exported permission: 'edit media'.
   $permissions['edit media'] = array(
     'name' => 'edit media',
@@ -614,17 +570,6 @@ function collabco_core_feature_user_default_permissions() {
       'Content Manager' => 'Content Manager',
     ),
     'module' => 'media',
-  );
-
-  // Exported permission: 'edit own basic_page content'.
-  $permissions['edit own basic_page content'] = array(
-    'name' => 'edit own basic_page content',
-    'roles' => array(
-      'Admin' => 'Admin',
-      'Community Moderator' => 'Community Moderator',
-      'Content Manager' => 'Content Manager',
-    ),
-    'module' => 'node',
   );
 
   // Exported permission: 'edit own comments'.
