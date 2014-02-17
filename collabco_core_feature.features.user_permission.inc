@@ -584,6 +584,7 @@ function collabco_core_feature_user_default_permissions() {
   $permissions['flag tag_filter'] = array(
     'name' => 'flag tag_filter',
     'roles' => array(
+      'anonymous user' => 'anonymous user',
       'authenticated user' => 'authenticated user',
     ),
     'module' => 'flag',
@@ -848,6 +849,7 @@ function collabco_core_feature_user_default_permissions() {
   $permissions['unflag tag_filter'] = array(
     'name' => 'unflag tag_filter',
     'roles' => array(
+      'anonymous user' => 'anonymous user',
       'authenticated user' => 'authenticated user',
     ),
     'module' => 'flag',
