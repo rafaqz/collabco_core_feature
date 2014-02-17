@@ -141,15 +141,6 @@ function collabco_core_feature_user_default_permissions() {
     'module' => 'captcha',
   );
 
-  // Exported permission: 'administer Terms and Conditions'.
-  $permissions['administer Terms and Conditions'] = array(
-    'name' => 'administer Terms and Conditions',
-    'roles' => array(
-      'Admin' => 'Admin',
-    ),
-    'module' => 'legal',
-  );
-
   // Exported permission: 'administer actions'.
   $permissions['administer actions'] = array(
     'name' => 'administer actions',
@@ -912,16 +903,6 @@ function collabco_core_feature_user_default_permissions() {
       'Content Manager' => 'Content Manager',
     ),
     'module' => 'filter',
-  );
-
-  // Exported permission: 'view Terms and Conditions'.
-  $permissions['view Terms and Conditions'] = array(
-    'name' => 'view Terms and Conditions',
-    'roles' => array(
-      'anonymous user' => 'anonymous user',
-      'authenticated user' => 'authenticated user',
-    ),
-    'module' => 'legal',
   );
 
   // Exported permission: 'view date repeats'.
