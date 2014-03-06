@@ -164,6 +164,7 @@ function collabco_core_feature_user_default_permissions() {
     'name' => 'administer blocks',
     'roles' => array(
       'Admin' => 'Admin',
+      'Content Manager' => 'Content Manager',
     ),
     'module' => 'block',
   );
@@ -481,6 +482,9 @@ function collabco_core_feature_user_default_permissions() {
     'name' => 'cancel account',
     'roles' => array(
       'Admin' => 'Admin',
+      'Community Moderator' => 'Community Moderator',
+      'Content Manager' => 'Content Manager',
+      'authenticated user' => 'authenticated user',
     ),
     'module' => 'user',
   );
@@ -576,7 +580,9 @@ function collabco_core_feature_user_default_permissions() {
   // Exported permission: 'execute php code'.
   $permissions['execute php code'] = array(
     'name' => 'execute php code',
-    'roles' => array(),
+    'roles' => array(
+      'Admin' => 'Admin',
+    ),
     'module' => 'devel',
   );
 
@@ -869,6 +875,7 @@ function collabco_core_feature_user_default_permissions() {
       'Admin' => 'Admin',
       'Community Moderator' => 'Community Moderator',
       'Content Manager' => 'Content Manager',
+      'authenticated user' => 'authenticated user',
     ),
     'module' => 'filter',
   );
@@ -880,6 +887,7 @@ function collabco_core_feature_user_default_permissions() {
       'Admin' => 'Admin',
       'Community Moderator' => 'Community Moderator',
       'Content Manager' => 'Content Manager',
+      'anonymous user' => 'anonymous user',
       'authenticated user' => 'authenticated user',
     ),
     'module' => 'filter',
