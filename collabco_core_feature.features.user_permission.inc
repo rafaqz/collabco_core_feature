@@ -259,15 +259,6 @@ function collabco_core_feature_user_default_permissions() {
     'module' => 'menu',
   );
 
-  // Exported permission: 'administer message types'.
-  $permissions['administer message types'] = array(
-    'name' => 'administer message types',
-    'roles' => array(
-      'Admin' => 'Admin',
-    ),
-    'module' => 'message',
-  );
-
   // Exported permission: 'administer modules'.
   $permissions['administer modules'] = array(
     'name' => 'administer modules',
@@ -508,16 +499,6 @@ function collabco_core_feature_user_default_permissions() {
     'module' => 'context_ui',
   );
 
-  // Exported permission: 'create messages'.
-  $permissions['create messages'] = array(
-    'name' => 'create messages',
-    'roles' => array(
-      'Admin' => 'Admin',
-      'authenticated user' => 'authenticated user',
-    ),
-    'module' => 'message',
-  );
-
   // Exported permission: 'create url aliases'.
   $permissions['create url aliases'] = array(
     'name' => 'create url aliases',
@@ -718,33 +699,6 @@ function collabco_core_feature_user_default_permissions() {
   $permissions['show format selection for flagging'] = array(
     'name' => 'show format selection for flagging',
     'roles' => array(),
-    'module' => 'better_formats',
-  );
-
-  // Exported permission: 'show format selection for message'.
-  $permissions['show format selection for message'] = array(
-    'name' => 'show format selection for message',
-    'roles' => array(
-      'Admin' => 'Admin',
-    ),
-    'module' => 'better_formats',
-  );
-
-  // Exported permission: 'show format selection for message_type'.
-  $permissions['show format selection for message_type'] = array(
-    'name' => 'show format selection for message_type',
-    'roles' => array(
-      'Admin' => 'Admin',
-    ),
-    'module' => 'better_formats',
-  );
-
-  // Exported permission: 'show format selection for message_type_category'.
-  $permissions['show format selection for message_type_category'] = array(
-    'name' => 'show format selection for message_type_category',
-    'roles' => array(
-      'Admin' => 'Admin',
-    ),
     'module' => 'better_formats',
   );
 
