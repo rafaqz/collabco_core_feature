@@ -247,6 +247,7 @@ function collabco_core_feature_strongarm() {
       'New content' => 'Add a new file',
       'Save' => 'Submit',
       'Subscribe to group' => 'Join Group',
+      'Unsubscribe from group' => 'Leave Group',
       'Table of contents' => 'Page Contents',
     ),
   );
