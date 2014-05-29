@@ -95,15 +95,6 @@ function collabco_core_feature_user_default_permissions() {
     'module' => 'devel',
   );
 
-  // Exported permission: 'access rules debug'.
-  $permissions['access rules debug'] = array(
-    'name' => 'access rules debug',
-    'roles' => array(
-      'Admin' => 'Admin',
-    ),
-    'module' => 'rules',
-  );
-
   // Exported permission: 'access site in maintenance mode'.
   $permissions['access site in maintenance mode'] = array(
     'name' => 'access site in maintenance mode',
@@ -344,15 +335,6 @@ function collabco_core_feature_user_default_permissions() {
     'module' => 'redirect',
   );
 
-  // Exported permission: 'administer rules'.
-  $permissions['administer rules'] = array(
-    'name' => 'administer rules',
-    'roles' => array(
-      'Admin' => 'Admin',
-    ),
-    'module' => 'rules',
-  );
-
   // Exported permission: 'administer search'.
   $permissions['administer search'] = array(
     'name' => 'administer search',
@@ -425,15 +407,6 @@ function collabco_core_feature_user_default_permissions() {
     'module' => 'user',
   );
 
-  // Exported permission: 'administer uuid'.
-  $permissions['administer uuid'] = array(
-    'name' => 'administer uuid',
-    'roles' => array(
-      'Admin' => 'Admin',
-    ),
-    'module' => 'uuid',
-  );
-
   // Exported permission: 'administer views'.
   $permissions['administer views'] = array(
     'name' => 'administer views',
@@ -457,15 +430,6 @@ function collabco_core_feature_user_default_permissions() {
       'Admin' => 'Admin',
     ),
     'module' => 'node',
-  );
-
-  // Exported permission: 'bypass rules access'.
-  $permissions['bypass rules access'] = array(
-    'name' => 'bypass rules access',
-    'roles' => array(
-      'Admin' => 'Admin',
-    ),
-    'module' => 'rules',
   );
 
   // Exported permission: 'cancel account'.
@@ -735,13 +699,6 @@ function collabco_core_feature_user_default_permissions() {
     'roles' => array(
       'Admin' => 'Admin',
     ),
-    'module' => 'better_formats',
-  );
-
-  // Exported permission: 'show format selection for rules_config'.
-  $permissions['show format selection for rules_config'] = array(
-    'name' => 'show format selection for rules_config',
-    'roles' => array(),
     'module' => 'better_formats',
   );
 
