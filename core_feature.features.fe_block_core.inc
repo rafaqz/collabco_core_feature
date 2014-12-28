@@ -1,13 +1,13 @@
 <?php
 /**
  * @file
- * collabco_core_feature.features.fe_block_settings.inc
+ * core_feature.features.fe_block_settings.inc
  */
 
 /**
  * Implements hook_default_fe_block_settings().
  */
-function collabco_core_feature_default_fe_block_settings() {
+function core_feature_default_fe_block_settings() {
   $export = array();
 
   $export['version'] = '2.0';
@@ -23,10 +23,10 @@ function collabco_core_feature_default_fe_block_settings() {
     'roles' => array(),
     'themes' => array(
       'custom_zurb' => array(
-        'region' => 'content',
+        'region' => 'sidebar_second',
         'status' => 1,
         'theme' => 'custom_zurb',
-        'weight' => 20,
+        'weight' => 10,
       ),
       'seven' => array(
         'region' => '',

@@ -1,13 +1,13 @@
 <?php
 /**
  * @file
- * collabco_core_feature.features.user_role.inc
+ * core_feature.features.user_role.inc
  */
 
 /**
  * Implements hook_user_default_roles().
  */
-function collabco_core_feature_user_default_roles() {
+function core_feature_user_default_roles() {
   $roles = array();
 
   // Exported role: Admin.
