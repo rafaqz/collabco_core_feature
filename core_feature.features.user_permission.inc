@@ -5,7 +5,7 @@
  */
 
 /**
- * Implements hmtok_user_default_permissions().
+ * Implements hook_user_default_permissions().
  */
 function core_feature_user_default_permissions() {
   $permissions = array();
@@ -121,15 +121,6 @@ function core_feature_user_default_permissions() {
       'authenticated user' => 'authenticated user',
     ),
     'module' => 'user',
-  );
-
-  // Exported permission: 'administer CAPTCHA settings'.
-  $permissions['administer CAPTCHA settings'] = array(
-    'name' => 'administer CAPTCHA settings',
-    'roles' => array(
-      'Admin' => 'Admin',
-    ),
-    'module' => 'captcha',
   );
 
   // Exported permission: 'administer actions'.
@@ -317,15 +308,6 @@ function core_feature_user_default_permissions() {
       'Admin' => 'Admin',
     ),
     'module' => 'realname',
-  );
-
-  // Exported permission: 'administer recaptcha'.
-  $permissions['administer recaptcha'] = array(
-    'name' => 'administer recaptcha',
-    'roles' => array(
-      'Admin' => 'Admin',
-    ),
-    'module' => 'recaptcha',
   );
 
   // Exported permission: 'administer redirects'.
@@ -533,16 +515,6 @@ function core_feature_user_default_permissions() {
     'module' => 'devel',
   );
 
-  // Exported permission: 'flag tag_filter'.
-  $permissions['flag tag_filter'] = array(
-    'name' => 'flag tag_filter',
-    'roles' => array(
-      'anonymous user' => 'anonymous user',
-      'authenticated user' => 'authenticated user',
-    ),
-    'module' => 'flag',
-  );
-
   // Exported permission: 'flush caches'.
   $permissions['flush caches'] = array(
     'name' => 'flush caches',
@@ -645,15 +617,6 @@ function core_feature_user_default_permissions() {
     'module' => 'user',
   );
 
-  // Exported permission: 'skip CAPTCHA'.
-  $permissions['skip CAPTCHA'] = array(
-    'name' => 'skip CAPTCHA',
-    'roles' => array(
-      'Admin' => 'Admin',
-    ),
-    'module' => 'captcha',
-  );
-
   // Exported permission: 'skip comment approval'.
   $permissions['skip comment approval'] = array(
     'name' => 'skip comment approval',
@@ -671,16 +634,6 @@ function core_feature_user_default_permissions() {
       'Admin' => 'Admin',
     ),
     'module' => 'devel',
-  );
-
-  // Exported permission: 'unflag tag_filter'.
-  $permissions['unflag tag_filter'] = array(
-    'name' => 'unflag tag_filter',
-    'roles' => array(
-      'anonymous user' => 'anonymous user',
-      'authenticated user' => 'authenticated user',
-    ),
-    'module' => 'flag',
   );
 
   // Exported permission: 'use advanced search'.
