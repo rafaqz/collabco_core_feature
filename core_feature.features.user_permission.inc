@@ -187,24 +187,6 @@ function core_feature_user_default_permissions() {
     'module' => 'features',
   );
 
-  // Exported permission: 'administer filters'.
-  $permissions['administer filters'] = array(
-    'name' => 'administer filters',
-    'roles' => array(
-      'Admin' => 'Admin',
-    ),
-    'module' => 'filter',
-  );
-
-  // Exported permission: 'administer image styles'.
-  $permissions['administer image styles'] = array(
-    'name' => 'administer image styles',
-    'roles' => array(
-      'Admin' => 'Admin',
-    ),
-    'module' => 'image',
-  );
-
   // Exported permission: 'administer masquerade'.
   $permissions['administer masquerade'] = array(
     'name' => 'administer masquerade',
