@@ -123,15 +123,6 @@ function core_feature_user_default_permissions() {
     'module' => 'user',
   );
 
-  // Exported permission: 'administer CAPTCHA settings'.
-  $permissions['administer CAPTCHA settings'] = array(
-    'name' => 'administer CAPTCHA settings',
-    'roles' => array(
-      'Admin' => 'Admin',
-    ),
-    'module' => 'captcha',
-  );
-
   // Exported permission: 'administer actions'.
   $permissions['administer actions'] = array(
     'name' => 'administer actions',
@@ -317,15 +308,6 @@ function core_feature_user_default_permissions() {
       'Admin' => 'Admin',
     ),
     'module' => 'realname',
-  );
-
-  // Exported permission: 'administer recaptcha'.
-  $permissions['administer recaptcha'] = array(
-    'name' => 'administer recaptcha',
-    'roles' => array(
-      'Admin' => 'Admin',
-    ),
-    'module' => 'recaptcha',
   );
 
   // Exported permission: 'administer redirects'.
@@ -643,15 +625,6 @@ function core_feature_user_default_permissions() {
       'Admin' => 'Admin',
     ),
     'module' => 'user',
-  );
-
-  // Exported permission: 'skip CAPTCHA'.
-  $permissions['skip CAPTCHA'] = array(
-    'name' => 'skip CAPTCHA',
-    'roles' => array(
-      'Admin' => 'Admin',
-    ),
-    'module' => 'captcha',
   );
 
   // Exported permission: 'skip comment approval'.
