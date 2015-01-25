@@ -151,15 +151,6 @@ function core_feature_user_default_permissions() {
     'module' => 'block',
   );
 
-  // Exported permission: 'administer ckeditor'.
-  $permissions['administer ckeditor'] = array(
-    'name' => 'administer ckeditor',
-    'roles' => array(
-      'Admin' => 'Admin',
-    ),
-    'module' => 'ckeditor',
-  );
-
   // Exported permission: 'administer comments'.
   $permissions['administer comments'] = array(
     'name' => 'administer comments',
@@ -194,24 +185,6 @@ function core_feature_user_default_permissions() {
       'Admin' => 'Admin',
     ),
     'module' => 'features',
-  );
-
-  // Exported permission: 'administer filters'.
-  $permissions['administer filters'] = array(
-    'name' => 'administer filters',
-    'roles' => array(
-      'Admin' => 'Admin',
-    ),
-    'module' => 'filter',
-  );
-
-  // Exported permission: 'administer image styles'.
-  $permissions['administer image styles'] = array(
-    'name' => 'administer image styles',
-    'roles' => array(
-      'Admin' => 'Admin',
-    ),
-    'module' => 'image',
   );
 
   // Exported permission: 'administer masquerade'.
@@ -434,15 +407,6 @@ function core_feature_user_default_permissions() {
       'Admin' => 'Admin',
     ),
     'module' => 'path',
-  );
-
-  // Exported permission: 'customize ckeditor'.
-  $permissions['customize ckeditor'] = array(
-    'name' => 'customize ckeditor',
-    'roles' => array(
-      'Admin' => 'Admin',
-    ),
-    'module' => 'ckeditor',
   );
 
   // Exported permission: 'delete revisions'.
