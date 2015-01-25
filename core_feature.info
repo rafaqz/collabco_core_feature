@@ -22,7 +22,6 @@ dependencies[] = masquerade
 dependencies[] = media
 dependencies[] = menu
 dependencies[] = node
-dependencies[] = og
 dependencies[] = path
 dependencies[] = pathauto
 dependencies[] = realname
