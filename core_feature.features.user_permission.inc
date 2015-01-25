@@ -5,7 +5,7 @@
  */
 
 /**
- * Implements hmtok_user_default_permissions().
+ * Implements hook_user_default_permissions().
  */
 function core_feature_user_default_permissions() {
   $permissions = array();
@@ -515,16 +515,6 @@ function core_feature_user_default_permissions() {
     'module' => 'devel',
   );
 
-  // Exported permission: 'flag tag_filter'.
-  $permissions['flag tag_filter'] = array(
-    'name' => 'flag tag_filter',
-    'roles' => array(
-      'anonymous user' => 'anonymous user',
-      'authenticated user' => 'authenticated user',
-    ),
-    'module' => 'flag',
-  );
-
   // Exported permission: 'flush caches'.
   $permissions['flush caches'] = array(
     'name' => 'flush caches',
@@ -644,16 +634,6 @@ function core_feature_user_default_permissions() {
       'Admin' => 'Admin',
     ),
     'module' => 'devel',
-  );
-
-  // Exported permission: 'unflag tag_filter'.
-  $permissions['unflag tag_filter'] = array(
-    'name' => 'unflag tag_filter',
-    'roles' => array(
-      'anonymous user' => 'anonymous user',
-      'authenticated user' => 'authenticated user',
-    ),
-    'module' => 'flag',
   );
 
   // Exported permission: 'use advanced search'.
