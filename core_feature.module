@@ -5,3 +5,19 @@
  */
 
 include_once 'core_feature.features.inc';
+
+/**
+ * Implementation of hook_menu_alter().
+ */
+function core_feature_menu_alter(&$items) {
+  // Override default home page content.
+  $items['node']['page callback'] = 'core_feature_empty_page';
+}
+ 
+/**
+ * Menu callback for an empty page.
+ */
+function core_feature_empty_page() {
+  drupal_set_title('');
+  return '';
+}
