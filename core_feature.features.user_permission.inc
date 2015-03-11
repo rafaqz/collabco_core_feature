@@ -132,15 +132,6 @@ function core_feature_user_default_permissions() {
     'module' => 'system',
   );
 
-  // Exported permission: 'administer block classes'.
-  $permissions['administer block classes'] = array(
-    'name' => 'administer block classes',
-    'roles' => array(
-      'Admin' => 'Admin',
-    ),
-    'module' => 'block_class',
-  );
-
   // Exported permission: 'administer blocks'.
   $permissions['administer blocks'] = array(
     'name' => 'administer blocks',
