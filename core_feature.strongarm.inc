@@ -41,7 +41,6 @@ function core_feature_strongarm() {
     'devel' => 0,
     'devel_node_access' => 0,
     'field_ui' => 0,
-    'rules_admin' => 0,
     'stringoverrides' => 0,
     'views_ui' => 0,
   );
@@ -65,14 +64,14 @@ function core_feature_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'admin_menu_tweak_modules';
-  $strongarm->value = 1;
+  $strongarm->value = 0;
   $export['admin_menu_tweak_modules'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'admin_menu_tweak_permissions';
-  $strongarm->value = 1;
+  $strongarm->value = 0;
   $export['admin_menu_tweak_permissions'] = $strongarm;
 
   $strongarm = new stdClass();
